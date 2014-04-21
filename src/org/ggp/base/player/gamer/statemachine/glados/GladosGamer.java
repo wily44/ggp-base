@@ -2,7 +2,6 @@ package org.ggp.base.player.gamer.statemachine.glados;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Random;
 
 import org.ggp.base.apps.player.detail.DetailPanel;
 import org.ggp.base.apps.player.detail.SimpleDetailPanel;
@@ -23,7 +22,9 @@ import org.ggp.base.util.statemachine.implementation.prover.ProverStateMachine;
 
 public final class GladosGamer extends StateMachineGamer
 {
-	private int maxScoreSingle(Role role, MachineState state) {
+	private List<Move> optPlan;
+
+	private int maxScoreSingle(Role role, MachineState state) throws GoalDefinitionException, MoveDefinitionException, TransitionDefinitionException {
 		// Do nothing
 		StateMachine game = getStateMachine();
 		if (game.isTerminal(state))
@@ -31,10 +32,30 @@ public final class GladosGamer extends StateMachineGamer
 		List<Move> actions = game.getLegalMoves(state, role);
 		int score = 0;
 		for (int i = 0; i < actions.size(); i++) {
-			List<Move> currAction
-			int result = maxscore(role, game.getNextState(state, moves))
+			List<Move> currAction = new ArrayList<Move>();
+			currAction.add(actions.get(i));
+			int result = maxScoreSingle(role, game.getNextState(state, currAction));
+			if (result > score)
+				score = result;
 		}
 		return score;
+	}
+
+	private List<Move> bestPlan(Role role, MachineState state, List<Move> currSteps) throws MoveDefinitionException, GoalDefinitionException, TransitionDefinitionException {
+		StateMachine game = getStateMachine();
+		if (game.isTerminal(state))
+			return currSteps;
+		List<Move> actions = game.getLegalMoves(state, role);
+		int score = maxScoreSingle(role, state);
+		for (int i = 0; i < actions.size(); i++) {
+			List<Move> currAction = new ArrayList<Move>();
+			currAction.add(actions.get(i));
+			if (maxScoreSingle(role, game.getNextState(state, currAction)) == score) {
+				currSteps.add(actions.get(i));
+				return bestPlan(role, game.getNextState(state, currAction), currSteps);
+			}
+		}
+		return null;
 	}
 
 
@@ -49,7 +70,7 @@ public final class GladosGamer extends StateMachineGamer
 		long start = System.currentTimeMillis();
 
 		List<Move> moves = getStateMachine().getLegalMoves(getCurrentState(), getRole());
-		Move selection = (moves.get(new Random().nextInt(moves.size())));
+		Move selection = optPlan.remove(0);
 
 		long stop = System.currentTimeMillis();
 
@@ -70,7 +91,8 @@ public final class GladosGamer extends StateMachineGamer
 	@Override
 	public void stateMachineMetaGame(long timeout) throws TransitionDefinitionException, MoveDefinitionException, GoalDefinitionException
 	{
-
+		List<Move> currList = new ArrayList<Move>();
+		optPlan = bestPlan(getRole(), getStateMachine().getInitialState(), currList);
 	}
 
 	@Override
