@@ -22,10 +22,14 @@ import org.ggp.base.util.statemachine.implementation.prover.ProverStateMachine;
 
 public final class GladosGamer extends StateMachineGamer
 {
-	private List<Move> optPlan;
+	private List<Move> optPlan1P;
+	private StateMachine game = getStateMachine();
+	private int maxScore;
 
-	private int maxScoreSingle(Role role, MachineState state) throws GoalDefinitionException, MoveDefinitionException, TransitionDefinitionException {
-		// Do nothing
+	// Computes the max score achievable from a certain state in a single player game.
+	// Works by recursively computing the max score for each state, max score = biggest score among
+	// the possible states following this one
+	private int maxScoreCompDelib(Role role, MachineState state) throws GoalDefinitionException, MoveDefinitionException, TransitionDefinitionException {
 		StateMachine game = getStateMachine();
 		if (game.isTerminal(state))
 			return game.getGoal(state, role);
@@ -34,28 +38,74 @@ public final class GladosGamer extends StateMachineGamer
 		for (int i = 0; i < actions.size(); i++) {
 			List<Move> currAction = new ArrayList<Move>();
 			currAction.add(actions.get(i));
-			int result = maxScoreSingle(role, game.getNextState(state, currAction));
-			if (result > score)
-				score = result;
+			int result = maxScoreCompDelib(role, game.getNextState(state, currAction));
+			score = Math.max(result, score);
 		}
 		return score;
 	}
 
-	private List<Move> bestPlan(Role role, MachineState state, List<Move> currSteps) throws MoveDefinitionException, GoalDefinitionException, TransitionDefinitionException {
+	// Devises the best possible plan for winning a 1P game. Will timeout on games with many possible
+	// states
+	private List<Move> bestPlanCompDelib(Role role, MachineState state, List<Move> currSteps) throws MoveDefinitionException, GoalDefinitionException, TransitionDefinitionException {
 		StateMachine game = getStateMachine();
 		if (game.isTerminal(state))
 			return currSteps;
 		List<Move> actions = game.getLegalMoves(state, role);
-		int score = maxScoreSingle(role, state);
 		for (int i = 0; i < actions.size(); i++) {
 			List<Move> currAction = new ArrayList<Move>();
 			currAction.add(actions.get(i));
-			if (maxScoreSingle(role, game.getNextState(state, currAction)) == score) {
+			if (maxScoreCompDelib(role, game.getNextState(state, currAction)) == maxScore) {
 				currSteps.add(actions.get(i));
-				return bestPlan(role, game.getNextState(state, currAction), currSteps);
+				return bestPlanCompDelib(role, game.getNextState(state, currAction), currSteps);
 			}
 		}
 		return null;
+	}
+
+	private int maxScoreABPrune(Role role, MachineState state, int alpha, int beta) throws GoalDefinitionException, MoveDefinitionException, TransitionDefinitionException {
+		StateMachine game = getStateMachine();
+		if (game.isTerminal(state)) {
+			return game.getGoal(state, role);
+		}
+		List<Move> actions = game.getLegalMoves(state, role);
+		for (int i = 0; i < actions.size(); i++) {
+			int result = minScoreABPrune(role, actions.get(i), state, alpha, beta);
+			alpha = Math.max(alpha, result);
+			if (alpha >= beta)
+				return beta;
+		}
+		return alpha;
+	}
+
+	private int minScoreABPrune(Role role, Move ourAction, MachineState state, int alpha, int beta) throws MoveDefinitionException, TransitionDefinitionException, GoalDefinitionException {
+		StateMachine game = getStateMachine();
+		List<List<Move>> actions = game.getLegalJointMoves(state, role, ourAction);
+		for (int i = 0; i < actions.size(); i++) {
+			List<Move> currActions = actions.get(i);
+			MachineState newstate = game.getNextState(state, currActions);
+			int result = maxScoreABPrune(role, newstate, alpha, beta);
+			beta = Math.min(beta, result);
+			if (beta <= alpha)
+				return alpha;
+		}
+		return beta;
+	}
+
+	private Move bestMoveABPrune(Role role, MachineState state, int alpha, int beta) throws MoveDefinitionException, TransitionDefinitionException, GoalDefinitionException {
+		StateMachine game = getStateMachine();
+		List<Move> actions = game.getLegalMoves(state, role);
+		Move chosen = actions.get(0);
+		int score = 0;
+		for (int i = 0; i < actions.size(); i++) {
+			int result = minScoreABPrune(role, actions.get(i), state, alpha, beta);
+			if (result == beta)
+				return actions.get(i);
+			if (result > score) {
+				score = result;
+				chosen = actions.get(i);
+			}
+		}
+		return chosen;
 	}
 
 
@@ -70,7 +120,12 @@ public final class GladosGamer extends StateMachineGamer
 		long start = System.currentTimeMillis();
 
 		List<Move> moves = getStateMachine().getLegalMoves(getCurrentState(), getRole());
-		Move selection = optPlan.remove(0);
+		Move selection = getStateMachine().getRandomMove(getCurrentState(), getRole());
+		if (getStateMachine().getRoles().size() == 1) {
+			selection = optPlan1P.remove(0);
+		} else {
+			selection = bestMoveABPrune(getRole(), getStateMachine().getInitialState(), 0, 100);
+		}
 
 		long stop = System.currentTimeMillis();
 
@@ -91,8 +146,13 @@ public final class GladosGamer extends StateMachineGamer
 	@Override
 	public void stateMachineMetaGame(long timeout) throws TransitionDefinitionException, MoveDefinitionException, GoalDefinitionException
 	{
-		List<Move> currList = new ArrayList<Move>();
-		optPlan = bestPlan(getRole(), getStateMachine().getInitialState(), currList);
+		if (getStateMachine().getRoles().size() == 1) {
+			List<Move> currList = new ArrayList<Move>();
+			maxScore = maxScoreCompDelib(getRole(), getStateMachine().getInitialState());
+			optPlan1P = bestPlanCompDelib(getRole(), getStateMachine().getInitialState(), currList);
+		} else {
+			maxScore = maxScoreABPrune(getRole(), getStateMachine().getInitialState(), 0, 100);
+		}
 	}
 
 	@Override
