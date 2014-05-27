@@ -1,6 +1,7 @@
 package org.ggp.base.player.gamer.statemachine.glados;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
@@ -29,6 +30,10 @@ public final class GladosGamer extends StateMachineGamer
 	private boolean sequentialPlanExists;
 	private boolean maxScoreSPFinished;
 	private boolean iterativeSearchFinished;
+	private int ourIndex;
+	private MCTSNode root;
+	private HashMap<MachineState, MCTSNode> MachineStateMap;
+//	private boolean selectCompleted;
 
 	public class MCTSNode
 	{
@@ -37,6 +42,7 @@ public final class GladosGamer extends StateMachineGamer
 			this.state = state;
 			visits = 0;
 			utility = 0;
+			children = new ArrayList<MCTSNode>();
 		}
 
 		public double getValue() {
@@ -50,8 +56,55 @@ public final class GladosGamer extends StateMachineGamer
 		public ArrayList<MCTSNode> children;
 	}
 
-	private MCTSNode selectNode(MCTSNode node) {
-		if (node.visits == 0) return node;
+	public class MCTSNodeMP
+	{
+		public MCTSNodeMP(MCTSNodeMP parent, MachineState state) {
+			this.parent = parent;
+			this.state = state;
+			int numplayers = game.getRoles().size();
+			utility = new ArrayList<Double>();
+			visits = new ArrayList<Integer>();
+			for (int i = 0; i < numplayers; i++) {
+				utility.add(0.0);
+				visits.add(0);
+			}
+			children = new ArrayList<MCTSNodeMP>();
+		}
+
+		public double getValue(int playerIndex) {
+			return (utility.get(playerIndex) + Math.sqrt(2 * Math.log(this.parent.visits.get(playerIndex) / visits.get(playerIndex))));
+		}
+
+		public MachineState state;
+		public MCTSNodeMP parent;
+		public ArrayList<Double> utility;
+		public ArrayList<Integer> visits;
+		public int numplayers;
+		public ArrayList<MCTSNodeMP> children;
+	}
+
+
+	private MCTSNodeMP selectNode(MCTSNodeMP node) {
+		if (node.visits.get(ourIndex) == 0 || game.isTerminal(node.state)) {
+			return node;
+		}
+		for (int i = 0; i < node.children.size(); i++) {
+			if (node.children.get(i).visits.get(ourIndex) == 0) return node.children.get(i);
+		}
+		double score = 0;
+		MCTSNodeMP result = node;
+		for (int i = 0; i < node.children.size(); i++) {
+			double newscore = node.children.get(i).getValue(ourIndex);
+			if (newscore > score) {
+				score = newscore;
+				result = node.children.get(i);
+			}
+		}
+		return result;
+	}
+
+	private MCTSNode selection(MCTSNode node) {
+		if (node.visits == 0 || game.isTerminal(node.state)) return node;
 		for (int i = 0; i < node.children.size(); i++) {
 			if (node.children.get(i).visits == 0) return node.children.get(i);
 		}
@@ -64,26 +117,90 @@ public final class GladosGamer extends StateMachineGamer
 				result = node.children.get(i);
 			}
 		}
-		return selectNode(result);
+		return result;
 	}
 
+
+
+	private boolean expandSP(MCTSNode node) throws MoveDefinitionException, TransitionDefinitionException {
+		if (game.isTerminal(node.state)) return true;
+		if (node.visits > 0) return false;
+		List<Move> actions = game.getLegalMoves(node.state, getRole());
+	//	if (node.parent != null && MachineStateMap.containsKey(node.state)) return true;
+		MachineStateMap.put(node.state, node);
+		for (int i = 0; i < actions.size(); i++) {
+			List<Move> move = new ArrayList<Move>();
+			move.add(actions.get(i));
+			MachineState newstate = game.getNextState(node.state, move);
+			if (!MachineStateMap.containsKey(newstate)) {
+				MCTSNode newnode = new MCTSNode(node, newstate);
+				node.children.add(newnode);
+			}
+		}
+		return true;
+	}
+
+	private void updateTreeSP(long timeout) throws MoveDefinitionException, TransitionDefinitionException, GoalDefinitionException {
+		while (System.currentTimeMillis() < timeout) {
+			MCTSNode currnode = MachineStateMap.get(getCurrentState());
+			while (!expandSP(currnode) && System.currentTimeMillis() < timeout) {
+				currnode = selection(currnode);
+			}
+			int numprobes = 1;
+			if (!game.isTerminal(currnode.state)) {
+				numprobes = game.getLegalMoves(currnode.state, getRole()).size();
+			}
+			double score = monteCarlo(getRole(), currnode.state, numprobes * 20);
+			backpropagateSP(currnode, score);
+		}
+	}
+
+/*
+	private void updateTree(long timeout) throws MoveDefinitionException, TransitionDefinitionException, GoalDefinitionException {
+	//	selectCompleted = true;
+		while (System.currentTimeMillis() < timeout) {
+			MCTSNode currnode = selectNode(MachineStateMap.get(getCurrentState()), timeout);
+		// /*   if (selectCompleted) expandSP(currnode);
+		 //   else break;
+			if (expandSP(currnode)) {
+				int score = depthCharge(getRole(), currnode.state, timeout);
+				backpropagateSP(currnode, score);
+			}
+		}
+	} */
+
+    private boolean backpropagateSP(MCTSNode node, double score) {
+    	node.visits += 1;
+    	node.utility += score;
+    	MachineStateMap.put(node.state, node);
+    	if (node.parent != null) backpropagateSP(node.parent, score) ;
+    	return true;
+    }
+
     private int depthCharge(Role role, MachineState state, long timeout) throws GoalDefinitionException, TransitionDefinitionException, MoveDefinitionException {
-    	if (game.isTerminal(state)) return game.getGoal(state, role);
-    	if (System.currentTimeMillis() > timeout) return game.getGoal(state, role);
+    	if (game.isTerminal(state) || System.currentTimeMillis() > timeout) return game.getGoal(state, role);
     	List<Move> moves = game.getRandomJointMove(state);
     	MachineState nextstate = game.getNextState(state, moves);
     	return depthCharge(role, nextstate, timeout);
     }
 
-  /*  private int monteCarlo(Role role, MachineState state, int count) throws GoalDefinitionException, TransitionDefinitionException, MoveDefinitionException {
+    private int depthCharge(Role role, MachineState state, int level, int limit) throws MoveDefinitionException, TransitionDefinitionException, GoalDefinitionException {
+    	if (game.isTerminal(state) || level > limit) return game.getGoal(state, role);
+    	List<Move> moves = game.getRandomJointMove(state);
+    	MachineState nextstate = game.getNextState(state, moves);
+    	return depthCharge(role, nextstate, level + 1, limit);
+    }
+
+
+    private int monteCarlo(Role role, MachineState state, int count) throws GoalDefinitionException, TransitionDefinitionException, MoveDefinitionException {
     	int total = 0;
     	for (int i = 0; i < count; i++) {
-    		total += depthCharge(role, state);
+    		total += depthCharge(role, state, 0, 100);
     	}
     	return total / count;
-    } */
+    }
 
-    private int monteCarlo(Role role, MachineState state, long timeRemaining) throws GoalDefinitionException, TransitionDefinitionException, MoveDefinitionException {
+    private int monteCarloTime(Role role, MachineState state, long timeRemaining) throws GoalDefinitionException, TransitionDefinitionException, MoveDefinitionException {
     	int total = 0;
     	int count = 0;
     	long timeCutoff = System.currentTimeMillis() + timeRemaining;
@@ -118,7 +235,7 @@ public final class GladosGamer extends StateMachineGamer
     				result = actions.get(prevBestIndex);
     				break;
     			}
-    			int score = monteCarlo(role, nextState, timeGiven);
+    			int score = monteCarloTime(role, nextState, timeGiven);
     			if (score > bestscore) {
     				bestscore = score;
     				result = actions.get(i);
@@ -133,7 +250,7 @@ public final class GladosGamer extends StateMachineGamer
     	return result;
     }
 
-
+/*
 	private int zeroHeuristic(Role role, MachineState state) {
 		return 0;
 	}
@@ -240,7 +357,7 @@ public final class GladosGamer extends StateMachineGamer
 
 	// Devises the best possible plan for winning a SP game. Will timeout on games with many possible
 	// states
-	private List<Move> bestPlanDepthSearchSP(Role role, MachineState state, List<Move> currSteps, int heuristicIndex, long timeout) throws MoveDefinitionException, GoalDefinitionException, TransitionDefinitionException {
+/*	private List<Move> bestPlanDepthSearchSP(Role role, MachineState state, List<Move> currSteps, int heuristicIndex, long timeout) throws MoveDefinitionException, GoalDefinitionException, TransitionDefinitionException {
 		if (game.isTerminal(state)) {
 			sequentialPlanExists = true;
 			return currSteps;
@@ -255,7 +372,7 @@ public final class GladosGamer extends StateMachineGamer
 				currSteps.add(actions.get(i));
 				return bestPlanDepthSearchSP(role, game.getNextState(state, currAction), currSteps, timeout);
 			}
-		} */
+		}
 
 		Move bestMove = bestMoveIterativeDepthSP(role, state, 0, timeout);
 		if (bestMove == null) return null;
@@ -351,7 +468,7 @@ public final class GladosGamer extends StateMachineGamer
 			}
 		}
 		return chosen;
-	}
+	} */
 
 
 	@Override
@@ -363,12 +480,30 @@ public final class GladosGamer extends StateMachineGamer
 	public Move stateMachineSelectMove(long timeout) throws TransitionDefinitionException, MoveDefinitionException, GoalDefinitionException
 	{
 		long start = System.currentTimeMillis();
-		long finishBy = timeout - 1000;
+		long finishBy = timeout - 2000;
 
 		List<Move> moves = game.getLegalMoves(getCurrentState(), getRole());
-		Move selection = bestMoveMCS(getRole(), getCurrentState(), finishBy);
-	/*	if (game.getRoles().size() == 1) {
-			if (sequentialPlanExists) {
+		Move selection = moves.get(0);
+		if (game.getRoles().size() == 1) {
+			updateTreeSP(finishBy);
+			MCTSNode currnode = MachineStateMap.get(getCurrentState());
+			int index = 0;
+			double bestscore = 0;
+			for (int i = 0; i < currnode.children.size(); i++) {
+				MCTSNode child = currnode.children.get(i);
+				if ((child.utility / child.visits) > bestscore) {
+					bestscore = child.utility / child.visits;
+					index = i;
+				}
+			}
+			if (bestscore == 0) {
+				selection = game.getRandomMove(getCurrentState(), getRole());
+				System.out.println("Random");
+			}
+			else selection = moves.get(index);
+	//		root = root.children.get(index);
+		}
+	/*		if (sequentialPlanExists) {
 				selection = optPlanSP.remove(0);
 			} else {
 				/*int bestSeenScore = 0;
@@ -380,12 +515,12 @@ public final class GladosGamer extends StateMachineGamer
 						bestSeenScore = currScore;
 						selection = moves.get(i);
 					}
-				}*/
-	/*			selection = bestMoveBoundedDepthSP(getRole(), getCurrentState(), 0, 8, 1, finishBy);
-			}
-		} else {
-			selection = bestMoveBoundedDepthMP(getRole(), getCurrentState(), 0, 2, 1, finishBy);
-		} */
+				}
+				selection = bestMoveBoundedDepthSP(getRole(), getCurrentState(), 0, 8, 1, finishBy); */
+		 else {
+			//selection = bestMoveBoundedDepthMP(getRole(), getCurrentState(), 0, 2, 1, finishBy);
+			 selection = bestMoveMCS(getRole(), getCurrentState(), finishBy);
+		 }
 
 		long stop = System.currentTimeMillis();
 
@@ -410,11 +545,13 @@ public final class GladosGamer extends StateMachineGamer
 		long finishBy = timeout - 1500;
 
 		game = getStateMachine();
+		ourIndex = game.getRoleIndices().get(getRole());
 		sequentialPlanExists = false;
+		root = new MCTSNode(null, game.getInitialState());
+		MachineStateMap = new HashMap<MachineState, MCTSNode>();
+		MachineStateMap.put(game.getInitialState(), root);
 		if (game.getRoles().size() == 1) {
-			maxScore = maxScoreIterativeDepthSP(getRole(), game.getInitialState(), 0, finishBy);
-			//List<Move> currList = new ArrayList<Move>();
-			//optPlanSP = bestPlanDepthSearchSP(getRole(), game.getInitialState(), currList, 0, finishBy);
+			updateTreeSP(finishBy);
 		}
 	}
 
