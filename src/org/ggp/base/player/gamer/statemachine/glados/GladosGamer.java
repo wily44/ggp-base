@@ -159,7 +159,7 @@ public final class GladosGamer extends StateMachineGamer
 	private void updateTree(long timeout) throws MoveDefinitionException, TransitionDefinitionException, GoalDefinitionException {
 	//	selectCompleted = true;
 		while (System.currentTimeMillis() < timeout) {
-			MCTSNode currnode = selectNode(MachineStateMap.get(getCurrentState()), timeout);
+			MCTSNodeSP currnode = selectNode(MachineStateMap.get(getCurrentState()), timeout);
 		// /*   if (selectCompleted) expandSP(currnode);
 		 //   else break;
 			if (expandSP(currnode)) {
