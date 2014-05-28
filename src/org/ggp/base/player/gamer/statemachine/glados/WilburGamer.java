@@ -52,7 +52,7 @@ public class WilburGamer extends SampleGamer {
 
         public double getValue() { // I changed this?
             //return (utility + Math.sqrt(2 * Math.log(parent.visits / visits)));
-            return utility + Math.sqrt(2 * Math.log(parent.visits) / visits);
+            return utility / visits + Math.sqrt(2 * Math.log(parent.visits) / visits);
         }
 
         public MachineState state;
@@ -80,7 +80,7 @@ public class WilburGamer extends SampleGamer {
 
         public double getValue(int playerIndex) { // I changed this?
             //return (utility.get(playerIndex) + Math.sqrt(2 * Math.log(this.parent.visits.get(playerIndex) / visits.get(playerIndex))));
-            return utility.get(playerIndex) + Math.sqrt(2 * Math.log(this.parent.visits) / visits);
+            return utility.get(playerIndex) / visits + Math.sqrt(2 * Math.log(this.parent.visits) / visits);
         }
 
         public MachineState state;

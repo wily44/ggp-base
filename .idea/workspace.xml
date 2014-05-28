@@ -2,19 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8d760366-d5ac-4bb2-aa8c-a4e4bb42b0c0" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/.name" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/GGP_Base.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/dictionaries/Wilbur.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/org/ggp/base/player/gamer/statemachine/glados/WilburGamer.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/copyright/profiles_settings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/scopes/scope_settings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/ggp/base/player/gamer/statemachine/glados/GladosGamer.java" afterPath="$PROJECT_DIR$/src/org/ggp/base/player/gamer/statemachine/glados/GladosGamer.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/ggp/base/player/gamer/statemachine/glados/WilburGamer.java" afterPath="$PROJECT_DIR$/src/org/ggp/base/player/gamer/statemachine/glados/WilburGamer.java" />
     </list>
     <ignored path="ggp-base.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -108,12 +96,12 @@
       <file leaf-file-name="WilburGamer.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/org/ggp/base/player/gamer/statemachine/glados/WilburGamer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="403" column="91" selection-start="17177" selection-end="17177" vertical-scroll-proportion="0.5721393" vertical-offset="9327" max-vertical-offset="13968">
+            <state line="75" column="45" selection-start="2742" selection-end="2742" vertical-scroll-proportion="0.60199004" vertical-offset="1437" max-vertical-offset="13968">
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#5371#5377#0" expanded="true" />
-                <element signature="e#10708#10717#0" expanded="true" />
-                <element signature="e#11590#11598#0" expanded="true" />
+                <element signature="e#5389#5395#0" expanded="true" />
+                <element signature="e#10726#10735#0" expanded="true" />
+                <element signature="e#11608#11616#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -813,7 +801,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -833,7 +821,7 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.22204472" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2926566" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2926566" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -1208,12 +1196,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/org/ggp/base/player/gamer/statemachine/glados/WilburGamer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="403" column="91" selection-start="17177" selection-end="17177" vertical-scroll-proportion="0.5721393" vertical-offset="9327" max-vertical-offset="13968">
+        <state line="75" column="45" selection-start="2742" selection-end="2742" vertical-scroll-proportion="0.60199004" vertical-offset="1437" max-vertical-offset="13968">
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#5371#5377#0" expanded="true" />
-            <element signature="e#10708#10717#0" expanded="true" />
-            <element signature="e#11590#11598#0" expanded="true" />
+            <element signature="e#5389#5395#0" expanded="true" />
+            <element signature="e#10726#10735#0" expanded="true" />
+            <element signature="e#11608#11616#0" expanded="true" />
           </folding>
         </state>
       </provider>
