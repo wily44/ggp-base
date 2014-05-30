@@ -16,14 +16,17 @@ import org.ggp.base.util.statemachine.exceptions.MoveDefinitionException;
 import org.ggp.base.util.statemachine.exceptions.TransitionDefinitionException;
 import org.ggp.base.util.statemachine.implementation.prover.ProverStateMachine;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 
 /**
  * Created on 5/24/14.
  */
 public class WilburGamer extends SampleGamer {
 
-    private static final int NUM_PROBES = 20;
+    private static final int NUM_PROBES = 5;
 
     //private List<Move> optPlanSP;
     //private int maxScore;
@@ -75,12 +78,24 @@ public class WilburGamer extends SampleGamer {
                 utility.add(0.0);
                 //visits.add(0);
             }
-            children = new ArrayList<MCTSNodeMP>();
+            children = new ArrayList<ArrayList<MCTSNodeMP>>();
         }
 
         public double getValue(int playerIndex) { // I changed this?
             //return (utility.get(playerIndex) + Math.sqrt(2 * Math.log(this.parent.visits.get(playerIndex) / visits.get(playerIndex))));
             return utility.get(playerIndex) / visits + Math.sqrt(2 * Math.log(this.parent.visits) / visits);
+        }
+
+        public double getRealUtility(int playerIndex) {
+            return utility.get(playerIndex) / visits;
+        }
+
+        public double getSelectionValue() {
+            double value = 100;
+            for (int i = 0; i < game.getRoles().size(); i++) {
+                value *= (this.getRealUtility(i) / 100);
+            }
+            return value;
         }
 
         public MachineState state;
@@ -89,7 +104,7 @@ public class WilburGamer extends SampleGamer {
         //public ArrayList<Integer> visits;
         public int visits;
         public int numplayers;
-        public ArrayList<MCTSNodeMP> children;
+        public ArrayList<ArrayList<MCTSNodeMP>> children;
     }
 
 
@@ -100,15 +115,19 @@ public class WilburGamer extends SampleGamer {
         }
         for (int i = 0; i < node.children.size(); i++) {
             //if (node.children.get(i).visits.get(ourIndex) == 0) return node.children.get(i);
-            if (node.children.get(i).visits == 0) return node.children.get(i);
+            for (int j = 0; j < node.children.get(i).size(); j++) {
+                if (node.children.get(i).get(j).visits == 0) return node.children.get(i).get(j);
+            }
         }
         double score = 0;
         MCTSNodeMP result = node;
         for (int i = 0; i < node.children.size(); i++) {
-            double newscore = node.children.get(i).getValue(ourIndex);
-            if (newscore > score) {
-                score = newscore;
-                result = node.children.get(i);
+            for (int j = 0; j < node.children.get(i).size(); j++) {
+                double newscore = node.children.get(i).get(j).getValue(ourIndex);
+                if (newscore > score) {
+                    score = newscore;
+                    result = node.children.get(i).get(j);
+                }
             }
         }
         return result;
@@ -155,13 +174,28 @@ public class WilburGamer extends SampleGamer {
         if(game.isTerminal(node.state)) return true;
         //if(node.visits > 0) return false;
         if(node.visits > 0) return false;
-        List<List<Move> > actions = game.getLegalJointMoves(node.state);
+        //List<List<Move> > actions = game.getLegalJointMoves(node.state);
+        System.out.println("ExpandedNode");
+        List<Move> ourActions = game.getLegalMoves(node.state, getRole());
         MachineStateMapMP.put(node.state, node);
-        List<Move> randomJointMove = actions.get((int)(Math.random() * actions.size()));
+        for (int i = 0; i < ourActions.size(); i++) {
+            ArrayList<MCTSNodeMP> newchildren = new ArrayList<MCTSNodeMP>();
+            node.children.add(newchildren);
+            List<List<Move>> allActions = game.getLegalJointMoves(node.state, getRole(), ourActions.get(i));
+            for (int j = 0; j < allActions.size(); j++) {
+                allActions.get(j).add(ourIndex, ourActions.get(i));
+                MachineState newstate = game.getNextState(node.state, allActions.get(j));
+                if (!MachineStateMapMP.containsKey(newstate)) {
+                    MCTSNodeMP newnode = new MCTSNodeMP(node, newstate);
+                    node.children.get(i).add(newnode);
+                }
+            }
+        }
+    /*    List<Move> randomJointMove = actions.get((int)(Math.random() * actions.size()));
         MachineState newstate = game.getNextState(node.state, randomJointMove);
         if(!MachineStateMapMP.containsKey(newstate)) {
             node.children.add(new MCTSNodeMP(node, newstate));
-        }
+        } */
         return true;
     }
 
@@ -193,12 +227,16 @@ public class WilburGamer extends SampleGamer {
                 currnode = selectionMP(currnode);
                 System.out.println(System.currentTimeMillis() + " " + timeout + " " + (timeout - System.currentTimeMillis()));
             }
+            System.out.println("Break 1");
             int numprobes = 1;
             if(!game.isTerminal(currnode.state)) {
                 numprobes = game.getLegalJointMoves(currnode.state).size();
             }
-            List<Double> scores = monteCarloMP(currnode.state, numprobes * NUM_PROBES);
+            System.out.println("Break 2");
+            List<Double> scores = monteCarloMP(currnode.state, numprobes * NUM_PROBES, timeout);
+            System.out.println("Break 3");
             backpropagateMP(currnode, scores);
+            System.out.println("UpdateTree");
         }
     }
 
@@ -225,10 +263,11 @@ public class WilburGamer extends SampleGamer {
     }
 
     private boolean backpropagateMP(MCTSNodeMP node, List<Double> scores) {
-        node.visits++;
+        node.visits += 1;
         for(int i = 0; i < node.utility.size(); i++) {
             node.utility.set(i, node.utility.get(i) + scores.get(i));
         }
+        MachineStateMapMP.put(node.state, node);
         if(node.parent != null) backpropagateMP(node.parent, scores);
         return true;
     }
@@ -271,12 +310,13 @@ public class WilburGamer extends SampleGamer {
         return total / (double)count;
     }
 
-    private List<Double> monteCarloMP(MachineState state, int count) throws GoalDefinitionException, TransitionDefinitionException, MoveDefinitionException {
+    private List<Double> monteCarloMP(MachineState state, int count, long timeout) throws GoalDefinitionException, TransitionDefinitionException, MoveDefinitionException {
         List<Double> total = new ArrayList<Double>();
         for(int i = 0; i < game.getRoles().size(); i++) {
             total.add(0.);
         }
         for (int i = 0; i < count; i++) {
+            if (System.currentTimeMillis() > timeout) break;
             ArrayList<Integer> scores = depthChargeMP(state, 0, 100);
             for(int j = 0; j < total.size(); j++) {
                 total.set(j, total.get(j) + scores.get(j));
@@ -388,8 +428,40 @@ public class WilburGamer extends SampleGamer {
             updateTreeMP(finishBy);
             MCTSNodeMP currnode = MachineStateMapMP.get(getCurrentState());
             int index = 0;
+            int prev = 0;
+            boolean badMove = false;
             double bestscore = 0;
             for (int i = 0; i < currnode.children.size(); i++) {
+                if (badMove) {
+                    badMove = false;
+                    break;
+                }
+                for (int j = 0; j < currnode.children.get(i).size(); j++) {
+                    MCTSNodeMP child = currnode.children.get(i).get(j);
+                    if (game.isTerminal(getCurrentState()) && game.getGoal(child.state, getRole()) == 0) {
+                        index = prev;
+                        badMove = true;
+                        break;
+                    }
+                    if (game.isTerminal(child.state) && game.getGoal(child.state, getRole()) == 100) {
+                        selection = moves.get(i);
+                        long stop = System.currentTimeMillis();
+                        notifyObservers(new GamerSelectedMoveEvent(moves, selection, stop - start));
+                        return selection;
+                    }
+                    if (child.getRealUtility(ourIndex) > bestscore) {
+                        bestscore = child.getRealUtility(ourIndex);
+                        if (index != i) prev = index;
+                        index = i;
+                    }
+                }
+            }
+            if (bestscore == 0) {
+                selection = game.getRandomMove(getCurrentState(), getRole());
+                System.out.println("Random");
+            } else selection = moves.get(index);
+
+   /*         for (int i = 0; i < currnode.children.size(); i++) {
                 MCTSNodeMP child = currnode.children.get(i);
                 if ((child.utility.get(ourIndex) / child.visits) > bestscore) {
                     bestscore = child.utility.get(ourIndex) / child.visits;
@@ -409,7 +481,7 @@ public class WilburGamer extends SampleGamer {
                         break;
                     }
                 }
-            }
+            } */
         }
 
         long stop = System.currentTimeMillis();
