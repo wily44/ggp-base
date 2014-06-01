@@ -1,9 +1,5 @@
 package org.ggp.base.util.statemachine.implementation.prover;
 
-import java.util.HashSet;
-import java.util.List;
-import java.util.Set;
-
 import org.ggp.base.util.gdl.grammar.Gdl;
 import org.ggp.base.util.gdl.grammar.GdlConstant;
 import org.ggp.base.util.gdl.grammar.GdlRelation;
@@ -21,6 +17,10 @@ import org.ggp.base.util.statemachine.exceptions.TransitionDefinitionException;
 import org.ggp.base.util.statemachine.implementation.prover.query.ProverQueryBuilder;
 import org.ggp.base.util.statemachine.implementation.prover.result.ProverResultParser;
 
+import java.util.HashSet;
+import java.util.List;
+import java.util.Set;
+
 
 public class ProverStateMachine extends StateMachine
 {
@@ -28,7 +28,9 @@ public class ProverStateMachine extends StateMachine
 	private Prover prover;
 	private List<Role> roles;
 
-	/**
+    public List gdlDescription; // Add this line
+
+    /**
 	 * Initialize must be called before using the StateMachine
 	 */
 	public ProverStateMachine()
@@ -39,6 +41,7 @@ public class ProverStateMachine extends StateMachine
 	@Override
 	public void initialize(List<Gdl> description)
 	{
+        gdlDescription = description; // And this line
 		prover = new AimaProver(description);
 		roles = Role.computeRoles(description);
 		initialState = computeInitialState();
@@ -118,6 +121,6 @@ public class ProverStateMachine extends StateMachine
 	@Override
 	public boolean isTerminal(MachineState state)
 	{
-		return prover.prove(ProverQueryBuilder.getTerminalQuery(), ProverQueryBuilder.getContext(state));
+        return prover.prove(ProverQueryBuilder.getTerminalQuery(), ProverQueryBuilder.getContext(state));
 	}
 }

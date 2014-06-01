@@ -1,27 +1,14 @@
 package org.ggp.base.util.propnet.architecture;
 
+import org.ggp.base.util.gdl.grammar.*;
+import org.ggp.base.util.logging.GamerLogger;
+import org.ggp.base.util.propnet.architecture.components.*;
+import org.ggp.base.util.statemachine.Role;
+
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.OutputStreamWriter;
-import java.util.HashMap;
-import java.util.HashSet;
-import java.util.List;
-import java.util.Map;
-import java.util.Set;
-
-import org.ggp.base.util.gdl.grammar.GdlConstant;
-import org.ggp.base.util.gdl.grammar.GdlPool;
-import org.ggp.base.util.gdl.grammar.GdlProposition;
-import org.ggp.base.util.gdl.grammar.GdlRelation;
-import org.ggp.base.util.gdl.grammar.GdlSentence;
-import org.ggp.base.util.gdl.grammar.GdlTerm;
-import org.ggp.base.util.logging.GamerLogger;
-import org.ggp.base.util.propnet.architecture.components.And;
-import org.ggp.base.util.propnet.architecture.components.Not;
-import org.ggp.base.util.propnet.architecture.components.Or;
-import org.ggp.base.util.propnet.architecture.components.Proposition;
-import org.ggp.base.util.propnet.architecture.components.Transition;
-import org.ggp.base.util.statemachine.Role;
+import java.util.*;
 
 
 /**
@@ -256,7 +243,7 @@ public final class PropNet
 		sb.append("digraph propNet\n{\n");
 		for ( Component component : components )
 		{
-			sb.append("\t" + component.toString() + "\n");
+			sb.append("\t" + component.toString() + " " + component.getValue() + "\n");
 		}
 		sb.append("}");
 

@@ -1,0 +1,474 @@
+digraph propNet
+{
+	"@3fec1479"[shape=circle, style= filled, fillcolor=white, label="( true ( location p ) )"]; "@3fec1479"->"@3449142c"; "@3fec1479"->"@612432f3"; "@3fec1479"->"@540670aa";  false
+	"@2247a9bd"[shape=circle, style= filled, fillcolor=white, label="anon"]; "@2247a9bd"->"@1d923058";  false
+	"@7fde4e30"[shape=box, style= filled, fillcolor=grey, label="TRANSITION"]; "@7fde4e30"->"@747590d5";  false
+	"@4cfa64cb"[shape=box, style= filled, fillcolor=grey, label="TRANSITION"]; "@4cfa64cb"->"@20951b15";  false
+	"@5f3bf208"[shape=ellipse, style= filled, fillcolor=grey, label="OR"]; "@5f3bf208"->"@588f1c10";  false
+	"@155c3887"[shape=ellipse, style= filled, fillcolor=grey, label="OR"]; "@155c3887"->"@59833205";  false
+	"@59833205"[shape=circle, style= filled, fillcolor=white, label="( legal robot ( move n ) )"];  false
+	"@41d637c6"[shape=circle, style= filled, fillcolor=white, label="( true ( step 20 ) )"]; "@41d637c6"->"@c5771d6";  false
+	"@738de7db"[shape=circle, style= filled, fillcolor=red, label="( init ( score 0 ) )"];  true
+	"@5db8045a"[shape=circle, style= filled, fillcolor=white, label="anon"]; "@5db8045a"->"@510806fd";  false
+	"@72f4ba78"[shape=ellipse, style= filled, fillcolor=grey, label="OR"]; "@72f4ba78"->"@20fe573e";  true
+	"@3762897f"[shape=circle, style= filled, fillcolor=white, label="( does robot ( move e ) )"]; "@3762897f"->"@2dbb49d"; "@3762897f"->"@4a601bd8"; "@3762897f"->"@57d84427"; "@3762897f"->"@7ab9aa57";  false
+	"@633f159a"[shape=box, style= filled, fillcolor=grey, label="TRANSITION"]; "@633f159a"->"@78a03c91";  false
+	"@301b35b2"[shape=invhouse, style= filled, fillcolor=grey, label="AND"]; "@301b35b2"->"@57a18078";  false
+	"@69123808"[shape=ellipse, style= filled, fillcolor=grey, label="OR"]; "@69123808"->"@2b1ccb1c";  false
+	"@6897352"[shape=circle, style= filled, fillcolor=white, label="anon"]; "@6897352"->"@ff06794";  false
+	"@580f73d3"[shape=circle, style= filled, fillcolor=white, label="anon"]; "@580f73d3"->"@be330a9";  false
+	"@642d5f39"[shape=ellipse, style= filled, fillcolor=grey, label="OR"]; "@642d5f39"->"@5ec6ca90";  false
+	"@60d80332"[shape=circle, style= filled, fillcolor=white, label="( true ( step 11 ) )"]; "@60d80332"->"@72195013";  false
+	"@4200ad86"[shape=invhouse, style= filled, fillcolor=grey, label="AND"]; "@4200ad86"->"@27daf9ac";  false
+	"@42cf1115"[shape=circle, style= filled, fillcolor=white, label="( true ( score 64 ) )"]; "@42cf1115"->"@b0d8aa9"; "@42cf1115"->"@7edf8181"; "@42cf1115"->"@65336486";  false
+	"@e419167"[shape=circle, style= filled, fillcolor=white, label="( true ( location c ) )"]; "@e419167"->"@642d5f39"; "@e419167"->"@1f063cae"; "@e419167"->"@73ce38b6";  false
+	"@7f05ff1f"[shape=circle, style= filled, fillcolor=white, label="( legal robot ( move f ) )"];  false
+	"@414eacf"[shape=circle, style= filled, fillcolor=white, label="( does robot ( move j ) )"]; "@414eacf"->"@76e829de"; "@414eacf"->"@3a284e08"; "@414eacf"->"@1696ff28"; "@414eacf"->"@4df78e7f";  false
+	"@6273a64a"[shape=invhouse, style= filled, fillcolor=grey, label="AND"]; "@6273a64a"->"@57a18078";  false
+	"@7374cc6d"[shape=ellipse, style= filled, fillcolor=grey, label="OR"]; "@7374cc6d"->"@79194352";  true
+	"@3549e5bb"[shape=ellipse, style= filled, fillcolor=grey, label="OR"]; "@3549e5bb"->"@6897352";  false
+	"@7644e8b7"[shape=circle, style= filled, fillcolor=white, label="( does robot ( move p ) )"]; "@7644e8b7"->"@190459b3"; "@7644e8b7"->"@12aa7a53"; "@7644e8b7"->"@485df366"; "@7644e8b7"->"@42606671";  false
+	"@1dc87877"[shape=circle, style= filled, fillcolor=red, label="( true ( visited k ) )"]; "@1dc87877"->"@72f4ba78"; "@1dc87877"->"@1f8dd49a"; "@1dc87877"->"@545cdbe7";  true
+	"@6c05f390"[shape=circle, style= filled, fillcolor=red, label="anon"]; "@6c05f390"->"@431ed1cf";  true
+	"@a385942"[shape=circle, style= filled, fillcolor=white, label="anon"]; "@a385942"->"@256f0c53";  false
+	"@5d649104"[shape=circle, style= filled, fillcolor=white, label="anon"]; "@5d649104"->"@5099c48a";  false
+	"@53aa104"[shape=circle, style= filled, fillcolor=white, label="anon"]; "@53aa104"->"@d45bd3a";  false
+	"@67d95fd9"[shape=ellipse, style= filled, fillcolor=grey, label="OR"]; "@67d95fd9"->"@4cfa64cb";  false
+	"@204d33d3"[shape=invhouse, style= filled, fillcolor=grey, label="AND"]; "@204d33d3"->"@13fa1cc8";  false
+	"@2c66057"[shape=circle, style= filled, fillcolor=white, label="( true ( location j ) )"]; "@2c66057"->"@642d5f39"; "@2c66057"->"@6b069a32"; "@2c66057"->"@69123808";  false
+	"@6934bb22"[shape=invhouse, style= filled, fillcolor=grey, label="AND"]; "@6934bb22"->"@57a18078";  false
+	"@4c0ac8f5"[shape=ellipse, style= filled, fillcolor=grey, label="OR"]; "@4c0ac8f5"->"@580f73d3";  false
+	"@c5771d6"[shape=circle, style= filled, fillcolor=white, label="terminal"];  false
+	"@72ced3fe"[shape=circle, style= filled, fillcolor=white, label="( legal robot ( move t ) )"];  false
+	"@25b66e6b"[shape=circle, style= filled, fillcolor=white, label="anon"]; "@25b66e6b"->"@633f159a";  false
+	"@69e077ff"[shape=circle, style= filled, fillcolor=white, label="anon"]; "@69e077ff"->"@4aef72e8";  false
+	"@35767073"[shape=ellipse, style= filled, fillcolor=grey, label="OR"]; "@35767073"->"@72d0a970";  false
+	"@23e0cae1"[shape=circle, style= filled, fillcolor=white, label="( legal robot ( move c ) )"];  false
+	"@6678b98e"[shape=box, style= filled, fillcolor=grey, label="TRANSITION"]; "@6678b98e"->"@4e776512";  false
+	"@19985bf0"[shape=invhouse, style= filled, fillcolor=grey, label="AND"]; "@19985bf0"->"@13fa1cc8";  false
+	"@47e2ea2b"[shape=box, style= filled, fillcolor=grey, label="TRANSITION"]; "@47e2ea2b"->"@30f8f548";  false
+	"@163e6862"[shape=invtriangle, style= filled, fillcolor=grey, label="NOT"]; "@163e6862"->"@5b370556";  false
+	"@38576984"[shape=ellipse, style= filled, fillcolor=grey, label="OR"]; "@38576984"->"@72d07601";  false
+	"@68bd647c"[shape=box, style= filled, fillcolor=grey, label="TRANSITION"]; "@68bd647c"->"@41d637c6";  true
+	"@70202db8"[shape=box, style= filled, fillcolor=grey, label="TRANSITION"]; "@70202db8"->"@6fd185cb";  false
+	"@79ee829b"[shape=circle, style= filled, fillcolor=red, label="( true ( visited l ) )"]; "@79ee829b"->"@6992fa9a"; "@79ee829b"->"@19c0cca7"; "@79ee829b"->"@6be35b7d";  true
+	"@72d0a970"[shape=circle, style= filled, fillcolor=white, label="( legal robot ( move r ) )"];  false
+	"@747590d5"[shape=circle, style= filled, fillcolor=white, label="( true ( score 1 ) )"]; "@747590d5"->"@3885ceee"; "@747590d5"->"@430cde2c"; "@747590d5"->"@6909cbe3";  false
+	"@1d5f22c2"[shape=box, style= filled, fillcolor=grey, label="TRANSITION"]; "@1d5f22c2"->"@6b4378a1";  false
+	"@6ed98341"[shape=ellipse, style= filled, fillcolor=grey, label="OR"]; "@6ed98341"->"@a385942";  false
+	"@5882e59f"[shape=invtriangle, style= filled, fillcolor=grey, label="NOT"]; "@5882e59f"->"@79b1571e";  false
+	"@6ceeaaa3"[shape=invhouse, style= filled, fillcolor=grey, label="AND"]; "@6ceeaaa3"->"@57a18078";  false
+	"@1c47644"[shape=ellipse, style= filled, fillcolor=grey, label="OR"]; "@1c47644"->"@9306b44";  false
+	"@71d19f30"[shape=circle, style= filled, fillcolor=red, label="anon"]; "@71d19f30"->"@50e2fd9e";  true
+	"@48dcbca"[shape=invhouse, style= filled, fillcolor=grey, label="AND"]; "@48dcbca"->"@1b7b8bdc";  false
+	"@6afe2828"[shape=circle, style= filled, fillcolor=white, label="( true ( step 8 ) )"]; "@6afe2828"->"@39ea4a7c";  false
+	"@42a3645d"[shape=box, style= filled, fillcolor=grey, label="TRANSITION"]; "@42a3645d"->"@79ee829b";  true
+	"@24a0bafa"[shape=circle, style= filled, fillcolor=white, label="( true ( location b ) )"]; "@24a0bafa"->"@12a1dab9"; "@24a0bafa"->"@4d1ce48c"; "@24a0bafa"->"@6aa1cb9";  false
+	"@69ceb0fc"[shape=circle, style= filled, fillcolor=white, label="( does robot ( move s ) )"]; "@69ceb0fc"->"@44ab8075"; "@69ceb0fc"->"@33929334"; "@69ceb0fc"->"@343ebdaa"; "@69ceb0fc"->"@79b1571e";  false
+	"@2fb6706a"[shape=invtriangle, style= filled, fillcolor=grey, label="NOT"]; "@2fb6706a"->"@728e579e";  true
+	"@147637a4"[shape=circle, style= filled, fillcolor=white, label="( true ( step 10 ) )"]; "@147637a4"->"@42af1e6d";  false
+	"@7ecd1988"[shape=invhouse, style= filled, fillcolor=grey, label="AND"]; "@7ecd1988"->"@1b7f6928";  false
+	"@510806fd"[shape=box, style= filled, fillcolor=grey, label="TRANSITION"]; "@510806fd"->"@2113c01f";  false
+	"@612432f3"[shape=ellipse, style= filled, fillcolor=grey, label="OR"]; "@612432f3"->"@f8d2158";  true
+	"@9182f09"[shape=circle, style= filled, fillcolor=white, label="( goal robot 0 )"];  false
+	"@79c87a44"[shape=circle, style= filled, fillcolor=white, label="( does robot ( move o ) )"]; "@79c87a44"->"@633c677e"; "@79c87a44"->"@53aa104"; "@79c87a44"->"@3604def0"; "@79c87a44"->"@7374cc6d";  false
+	"@26711c92"[shape=circle, style= filled, fillcolor=white, label="anon"]; "@26711c92"->"@be50010";  false
+	"@110bafbc"[shape=circle, style= filled, fillcolor=red, label="( true ( visited n ) )"]; "@110bafbc"->"@e737db7"; "@110bafbc"->"@5ac3e0a5"; "@110bafbc"->"@163e6862";  true
+	"@6b5b1a7"[shape=circle, style= filled, fillcolor=white, label="( true ( step 9 ) )"]; "@6b5b1a7"->"@79cec5a2";  false
+	"@4e718f60"[shape=invhouse, style= filled, fillcolor=grey, label="AND"]; "@4e718f60"->"@acb1b3c";  false
+	"@3241eea5"[shape=circle, style= filled, fillcolor=white, label="( goal robot 6 )"];  false
+	"@1ceef652"[shape=circle, style= filled, fillcolor=white, label="( true ( step 15 ) )"]; "@1ceef652"->"@25b66e6b";  false
+	"@27a88231"[shape=circle, style= filled, fillcolor=white, label="( true ( location s ) )"]; "@27a88231"->"@69123808"; "@27a88231"->"@540670aa"; "@27a88231"->"@35767073";  false
+	"@40c3350c"[shape=box, style= filled, fillcolor=grey, label="TRANSITION"]; "@40c3350c"->"@712674f7";  false
+	"@68c00394"[shape=ellipse, style= filled, fillcolor=grey, label="OR"]; "@68c00394"->"@162b1f46";  true
+	"@42606671"[shape=circle, style= filled, fillcolor=white, label="anon"]; "@42606671"->"@1b271f2a";  false
+	"@65336486"[shape=invhouse, style= filled, fillcolor=grey, label="AND"]; "@65336486"->"@1b7b8bdc";  false
+	"@179a101a"[shape=circle, style= filled, fillcolor=white, label="( goal robot 100 )"];  false
+	"@7a9e6914"[shape=invtriangle, style= filled, fillcolor=grey, label="NOT"]; "@7a9e6914"->"@3604def0";  false
+	"@7a882061"[shape=ellipse, style= filled, fillcolor=grey, label="OR"]; "@7a882061"->"@7f05ff1f";  false
+	"@4e156ebb"[shape=invhouse, style= filled, fillcolor=grey, label="AND"]; "@4e156ebb"->"@27daf9ac";  false
+	"@6e9ef0"[shape=invhouse, style= filled, fillcolor=grey, label="AND"]; "@6e9ef0"->"@4c0ac8f5";  false
+	"@7c211908"[shape=circle, style= filled, fillcolor=red, label="( true ( visited e ) )"]; "@7c211908"->"@4a601bd8"; "@7c211908"->"@7ab9aa57"; "@7c211908"->"@60f29be2";  true
+	"@2a8ce680"[shape=invhouse, style= filled, fillcolor=grey, label="AND"]; "@2a8ce680"->"@5e7d4ecf";  false
+	"@3c27401a"[shape=box, style= filled, fillcolor=grey, label="TRANSITION"]; "@3c27401a"->"@2d60f241";  false
+	"@7ec7c94e"[shape=circle, style= filled, fillcolor=white, label="( goal robot 16 )"];  false
+	"@544dbf3f"[shape=circle, style= filled, fillcolor=white, label="( true ( score 2 ) )"]; "@544dbf3f"->"@2a8ce680"; "@544dbf3f"->"@6d0d4e0f"; "@544dbf3f"->"@14ad6689";  false
+	"@2d60f241"[shape=circle, style= filled, fillcolor=white, label="( true ( location n ) )"]; "@2d60f241"->"@3449142c"; "@2d60f241"->"@1f063cae"; "@2d60f241"->"@49d24212";  false
+	"@315feb2"[shape=circle, style= filled, fillcolor=red, label="anon"]; "@315feb2"->"@65616f94";  true
+	"@540670aa"[shape=ellipse, style= filled, fillcolor=grey, label="OR"]; "@540670aa"->"@72ced3fe";  false
+	"@35649aba"[shape=box, style= filled, fillcolor=grey, label="TRANSITION"]; "@35649aba"->"@f7e7b42";  true
+	"@6e57533a"[shape=circle, style= filled, fillcolor=red, label="( true ( step 19 ) )"]; "@6e57533a"->"@582a1ce6";  true
+	"@335e74b3"[shape=circle, style= filled, fillcolor=red, label="anon"]; "@335e74b3"->"@f12de3a";  true
+	"@67c75a85"[shape=box, style= filled, fillcolor=grey, label="TRANSITION"]; "@67c75a85"->"@24c4e51f";  true
+	"@28f8946a"[shape=ellipse, style= filled, fillcolor=grey, label="OR"]; "@28f8946a"->"@57d7d029";  true
+	"@5256731c"[shape=circle, style= filled, fillcolor=white, label="init"]; "@5256731c"->"@1db35232"; "@5256731c"->"@67d95fd9"; "@5256731c"->"@4fcfc80b"; "@5256731c"->"@299f5d7f";  false
+	"@42f12d95"[shape=circle, style= filled, fillcolor=white, label="( true ( score 6 ) )"]; "@42f12d95"->"@52650ca5"; "@42f12d95"->"@95c57a9"; "@42f12d95"->"@3241eea5";  false
+	"@53f3768a"[shape=ellipse, style= filled, fillcolor=grey, label="OR"]; "@53f3768a"->"@14eb8915";  true
+	"@33fcb783"[shape=circle, style= filled, fillcolor=white, label="anon"]; "@33fcb783"->"@3c27401a";  false
+	"@6ea62dc9"[shape=box, style= filled, fillcolor=grey, label="TRANSITION"]; "@6ea62dc9"->"@67a04a2b";  false
+	"@222f66e2"[shape=circle, style= filled, fillcolor=white, label="( true ( step 3 ) )"]; "@222f66e2"->"@2302dfdb";  false
+	"@2aae2dc1"[shape=invhouse, style= filled, fillcolor=grey, label="AND"]; "@2aae2dc1"->"@3549e5bb";  false
+	"@ff06794"[shape=box, style= filled, fillcolor=grey, label="TRANSITION"]; "@ff06794"->"@475385b";  false
+	"@64c16e80"[shape=circle, style= filled, fillcolor=white, label="( true ( score 42 ) )"]; "@64c16e80"->"@399f2385"; "@64c16e80"->"@559157fd"; "@64c16e80"->"@6e9ef0";  false
+	"@4e9eb24"[shape=circle, style= filled, fillcolor=white, label="( does robot ( move f ) )"]; "@4e9eb24"->"@53f3768a"; "@4e9eb24"->"@5642798"; "@4e9eb24"->"@6934bb22"; "@4e9eb24"->"@76e77106";  false
+	"@35118a97"[shape=circle, style= filled, fillcolor=white, label="( legal robot ( move h ) )"];  false
+	"@33929334"[shape=invhouse, style= filled, fillcolor=grey, label="AND"]; "@33929334"->"@27daf9ac";  false
+	"@793f7fe2"[shape=circle, style= filled, fillcolor=white, label="( does robot ( move n ) )"]; "@793f7fe2"->"@e737db7"; "@793f7fe2"->"@33fcb783"; "@793f7fe2"->"@5ac3e0a5"; "@793f7fe2"->"@5b370556";  false
+	"@57730dad"[shape=circle, style= filled, fillcolor=white, label="( true ( score 90 ) )"]; "@57730dad"->"@64828892"; "@57730dad"->"@171881d0"; "@57730dad"->"@2aae2dc1";  false
+	"@5b00e4f"[shape=circle, style= filled, fillcolor=white, label="( does robot ( move h ) )"]; "@5b00e4f"->"@570be0c5"; "@5b00e4f"->"@9e6a64d"; "@5b00e4f"->"@23f5a573"; "@5b00e4f"->"@38576984";  false
+	"@e737db7"[shape=invhouse, style= filled, fillcolor=grey, label="AND"]; "@e737db7"->"@27daf9ac";  false
+	"@60081fdf"[shape=box, style= filled, fillcolor=grey, label="TRANSITION"]; "@60081fdf"->"@4555b536";  false
+	"@24c4e51f"[shape=circle, style= filled, fillcolor=red, label="( true ( visited o ) )"]; "@24c4e51f"->"@7a9e6914"; "@24c4e51f"->"@633c677e"; "@24c4e51f"->"@7374cc6d";  true
+	"@52ee436b"[shape=circle, style= filled, fillcolor=white, label="anon"]; "@52ee436b"->"@1db35232";  false
+	"@ef4ab95"[shape=circle, style= filled, fillcolor=white, label="anon"]; "@ef4ab95"->"@1df14d10";  false
+	"@6fb4f5d9"[shape=circle, style= filled, fillcolor=white, label="( goal robot 9 )"];  false
+	"@18ab246f"[shape=box, style= filled, fillcolor=grey, label="TRANSITION"]; "@18ab246f"->"@1dedccf2";  true
+	"@3bff75b9"[shape=circle, style= filled, fillcolor=white, label="( true ( step 6 ) )"]; "@3bff75b9"->"@5db8045a";  false
+	"@7be2bb40"[shape=invtriangle, style= filled, fillcolor=grey, label="NOT"]; "@7be2bb40"->"@6273a64a";  false
+	"@7e4eb8f9"[shape=circle, style= filled, fillcolor=white, label="( goal robot 4 )"];  false
+	"@3eb41955"[shape=circle, style= filled, fillcolor=white, label="( true ( location e ) )"]; "@3eb41955"->"@7a882061"; "@3eb41955"->"@1f063cae"; "@3eb41955"->"@12a1dab9";  false
+	"@57d8ab6a"[shape=circle, style= filled, fillcolor=white, label="( true ( score 12 ) )"]; "@57d8ab6a"->"@693d0da8"; "@57d8ab6a"->"@2e0c7cd2"; "@57d8ab6a"->"@72d85ae";  false
+	"@5099c48a"[shape=box, style= filled, fillcolor=grey, label="TRANSITION"]; "@5099c48a"->"@23ebe52c";  false
+	"@4d9eafea"[shape=circle, style= filled, fillcolor=white, label="( true ( location o ) )"]; "@4d9eafea"->"@7a882061"; "@4d9eafea"->"@155c3887"; "@4d9eafea"->"@7b278c2d";  false
+	"@37cc431"[shape=invhouse, style= filled, fillcolor=grey, label="AND"]; "@37cc431"->"@6579e80a";  false
+	"@61641d85"[shape=circle, style= filled, fillcolor=white, label="( legal robot ( move p ) )"];  false
+	"@6b4378a1"[shape=circle, style= filled, fillcolor=white, label="( true ( location m ) )"]; "@6b4378a1"->"@155c3887"; "@6b4378a1"->"@73ce38b6"; "@6b4378a1"->"@540670aa";  false
+	"@57a18078"[shape=ellipse, style= filled, fillcolor=grey, label="OR"]; "@57a18078"->"@2bf9733a";  false
+	"@3648b467"[shape=circle, style= filled, fillcolor=white, label="anon"]; "@3648b467"->"@310521a1";  false
+	"@507eaa2a"[shape=box, style= filled, fillcolor=grey, label="TRANSITION"]; "@507eaa2a"->"@147637a4";  false
+	"@43bae6a9"[shape=circle, style= filled, fillcolor=white, label="anon"]; "@43bae6a9"->"@67d95fd9";  false
+	"@68a3f092"[shape=box, style= filled, fillcolor=grey, label="TRANSITION"]; "@68a3f092"->"@164b648d";  false
+	"@72195013"[shape=circle, style= filled, fillcolor=white, label="anon"]; "@72195013"->"@27bd1ec";  false
+	"@19a360cd"[shape=ellipse, style= filled, fillcolor=grey, label="OR"]; "@19a360cd"->"@35283fe1";  false
+	"@2ff3404d"[shape=circle, style= filled, fillcolor=red, label="( init ( step 1 ) )"];  true
+	"@1075b52b"[shape=ellipse, style= filled, fillcolor=grey, label="OR"]; "@1075b52b"->"@1fc9227e";  false
+	"@728e579e"[shape=invhouse, style= filled, fillcolor=grey, label="AND"]; "@728e579e"->"@57a18078";  false
+	"@343ebdaa"[shape=ellipse, style= filled, fillcolor=grey, label="OR"]; "@343ebdaa"->"@315feb2";  true
+	"@4e6bdd4"[shape=box, style= filled, fillcolor=grey, label="TRANSITION"]; "@4e6bdd4"->"@42f12d95";  false
+	"@193d9fa5"[shape=circle, style= filled, fillcolor=red, label="next_tmp3"]; "@193d9fa5"->"@62c2d1cb"; "@193d9fa5"->"@399f2385"; "@193d9fa5"->"@559ee73d"; "@193d9fa5"->"@2d749b2f"; "@193d9fa5"->"@6c181056"; "@193d9fa5"->"@3289f8ed"; "@193d9fa5"->"@430cde2c"; "@193d9fa5"->"@52650ca5"; "@193d9fa5"->"@5f7bcb3c"; "@193d9fa5"->"@b0cf395"; "@193d9fa5"->"@4c76c902"; "@193d9fa5"->"@171881d0"; "@193d9fa5"->"@72d85ae"; "@193d9fa5"->"@433cac6c"; "@193d9fa5"->"@46632e75"; "@193d9fa5"->"@6d0d4e0f"; "@193d9fa5"->"@62e87be7"; "@193d9fa5"->"@6af5722e"; "@193d9fa5"->"@65336486"; "@193d9fa5"->"@204d33d3";  true
+	"@5f1a80d3"[shape=circle, style= filled, fillcolor=white, label="( does robot ( move t ) )"]; "@5f1a80d3"->"@ed8c8e0"; "@5f1a80d3"->"@728e579e"; "@5f1a80d3"->"@7e28fd30"; "@5f1a80d3"->"@bb19d3d";  false
+	"@6579e80a"[shape=ellipse, style= filled, fillcolor=grey, label="OR"]; "@6579e80a"->"@26711c92";  false
+	"@7039fba0"[shape=circle, style= filled, fillcolor=red, label="( true ( visited r ) )"]; "@7039fba0"->"@4a24b278"; "@7039fba0"->"@1a11b85e"; "@7039fba0"->"@6eb6feef";  true
+	"@5ac3e0a5"[shape=ellipse, style= filled, fillcolor=grey, label="OR"]; "@5ac3e0a5"->"@71d19f30";  true
+	"@1db35232"[shape=ellipse, style= filled, fillcolor=grey, label="OR"]; "@1db35232"->"@5fea44b8";  false
+	"@1e9f75bd"[shape=circle, style= filled, fillcolor=red, label="( true ( visited c ) )"]; "@1e9f75bd"->"@76eadaff"; "@1e9f75bd"->"@4e156ebb"; "@1e9f75bd"->"@6bf04cf8";  true
+	"@1f36695d"[shape=box, style= filled, fillcolor=grey, label="TRANSITION"]; "@1f36695d"->"@544dbf3f";  false
+	"@5be78d88"[shape=invtriangle, style= filled, fillcolor=grey, label="NOT"]; "@5be78d88"->"@3efd0adb";  true
+	"@3a6bf1bd"[shape=circle, style= filled, fillcolor=white, label="anon"]; "@3a6bf1bd"->"@68a3f092";  false
+	"@3efd0adb"[shape=invhouse, style= filled, fillcolor=grey, label="AND"]; "@3efd0adb"->"@57a18078";  false
+	"@f12de3a"[shape=box, style= filled, fillcolor=grey, label="TRANSITION"]; "@f12de3a"->"@7c211908";  true
+	"@34e189d0"[shape=box, style= filled, fillcolor=grey, label="TRANSITION"]; "@34e189d0"->"@1fd24d5e";  false
+	"@15f30b1"[shape=circle, style= filled, fillcolor=red, label="anon"]; "@15f30b1"->"@6602f59a";  true
+	"@164b648d"[shape=circle, style= filled, fillcolor=white, label="( true ( visited t ) )"]; "@164b648d"->"@ed8c8e0"; "@164b648d"->"@2fb6706a"; "@164b648d"->"@bb19d3d";  false
+	"@25c9e6a"[shape=invhouse, style= filled, fillcolor=grey, label="AND"]; "@25c9e6a"->"@27daf9ac";  false
+	"@4f336c07"[shape=circle, style= filled, fillcolor=red, label="( true ( location r ) )"]; "@4f336c07"->"@612432f3"; "@4f336c07"->"@68c00394"; "@4f336c07"->"@6b069a32";  true
+	"@a83f2cd"[shape=ellipse, style= filled, fillcolor=grey, label="OR"]; "@a83f2cd"->"@5cb9761f";  false
+	"@582a1ce6"[shape=circle, style= filled, fillcolor=red, label="anon"]; "@582a1ce6"->"@68bd647c";  true
+	"@696249d8"[shape=circle, style= filled, fillcolor=white, label="anon"]; "@696249d8"->"@6a103e9c";  false
+	"@792a42b0"[shape=ellipse, style= filled, fillcolor=grey, label="OR"]; "@792a42b0"->"@45806ef5";  true
+	"@30953499"[shape=box, style= filled, fillcolor=grey, label="TRANSITION"]; "@30953499"->"@24a0bafa";  false
+	"@29cb6f85"[shape=circle, style= filled, fillcolor=white, label="( legal robot ( move o ) )"];  false
+	"@64269d8"[shape=invhouse, style= filled, fillcolor=grey, label="AND"]; "@64269d8"->"@27daf9ac";  false
+	"@73ce38b6"[shape=ellipse, style= filled, fillcolor=grey, label="OR"]; "@73ce38b6"->"@67ed701f";  false
+	"@712674f7"[shape=circle, style= filled, fillcolor=white, label="( true ( location t ) )"]; "@712674f7"->"@49d24212"; "@712674f7"->"@7b278c2d"; "@712674f7"->"@68c00394";  false
+	"@1a11b85e"[shape=ellipse, style= filled, fillcolor=grey, label="OR"]; "@1a11b85e"->"@15f30b1";  true
+	"@67a04a2b"[shape=circle, style= filled, fillcolor=white, label="( true ( score 16 ) )"]; "@67a04a2b"->"@62c2d1cb"; "@67a04a2b"->"@19985bf0"; "@67a04a2b"->"@7ec7c94e";  false
+	"@588f1c10"[shape=circle, style= filled, fillcolor=white, label="anon"]; "@588f1c10"->"@6ea62dc9";  false
+	"@760790d7"[shape=circle, style= filled, fillcolor=white, label="( true ( visited g ) )"]; "@760790d7"->"@7e3fae1d"; "@760790d7"->"@6ab64fca"; "@760790d7"->"@25c9e6a";  false
+	"@2af04782"[shape=box, style= filled, fillcolor=grey, label="TRANSITION"]; "@2af04782"->"@5e5d39fd";  true
+	"@76466cb9"[shape=circle, style= filled, fillcolor=white, label="( goal robot 81 )"];  false
+	"@2d3f68ad"[shape=box, style= filled, fillcolor=grey, label="TRANSITION"]; "@2d3f68ad"->"@5fb87369";  false
+	"@57d84427"[shape=invhouse, style= filled, fillcolor=grey, label="AND"]; "@57d84427"->"@57a18078";  false
+	"@4fcfc80b"[shape=ellipse, style= filled, fillcolor=grey, label="OR"]; "@4fcfc80b"->"@5949f12";  true
+	"@78a03c91"[shape=circle, style= filled, fillcolor=white, label="( true ( step 16 ) )"]; "@78a03c91"->"@54dcd0c1";  false
+	"@61b4632b"[shape=circle, style= filled, fillcolor=white, label="( true ( score 72 ) )"]; "@61b4632b"->"@4ced6a2e"; "@61b4632b"->"@433cac6c"; "@61b4632b"->"@4b262fff";  false
+	"@2bf9733a"[shape=circle, style= filled, fillcolor=white, label="next_tmp1"]; "@2bf9733a"->"@69995591"; "@2bf9733a"->"@11f457f1"; "@2bf9733a"->"@5bd22dc7"; "@2bf9733a"->"@2e0c7cd2"; "@2bf9733a"->"@6909cbe3"; "@2bf9733a"->"@48dcbca"; "@2bf9733a"->"@21f41e47"; "@2bf9733a"->"@6e9ef0"; "@2bf9733a"->"@4e718f60"; "@2bf9733a"->"@2a8ce680"; "@2bf9733a"->"@37cc431"; "@2bf9733a"->"@95c57a9"; "@2bf9733a"->"@19985bf0"; "@2bf9733a"->"@4ced6a2e"; "@2bf9733a"->"@6a3ccdc3"; "@2bf9733a"->"@b0d8aa9"; "@2bf9733a"->"@2aae2dc1"; "@2bf9733a"->"@7ecd1988"; "@2bf9733a"->"@6e747b01";  false
+	"@37027447"[shape=circle, style= filled, fillcolor=white, label="( true ( location d ) )"]; "@37027447"->"@155c3887"; "@37027447"->"@6f5ab160"; "@37027447"->"@4d1ce48c";  false
+	"@52650ca5"[shape=invhouse, style= filled, fillcolor=grey, label="AND"]; "@52650ca5"->"@7169bce4";  false
+	"@570be0c5"[shape=invhouse, style= filled, fillcolor=grey, label="AND"]; "@570be0c5"->"@27daf9ac";  false
+	"@1696ff28"[shape=invhouse, style= filled, fillcolor=grey, label="AND"]; "@1696ff28"->"@27daf9ac";  false
+	"@751237d8"[shape=box, style= filled, fillcolor=grey, label="TRANSITION"]; "@751237d8"->"@60d80332";  false
+	"@4c4a85c8"[shape=box, style= filled, fillcolor=grey, label="TRANSITION"]; "@4c4a85c8"->"@39471187";  false
+	"@4ced6a2e"[shape=invhouse, style= filled, fillcolor=grey, label="AND"]; "@4ced6a2e"->"@32f3af6d";  false
+	"@3604def0"[shape=invhouse, style= filled, fillcolor=grey, label="AND"]; "@3604def0"->"@57a18078";  false
+	"@5d93eedd"[shape=box, style= filled, fillcolor=grey, label="TRANSITION"]; "@5d93eedd"->"@57d8ab6a";  false
+	"@3f646291"[shape=circle, style= filled, fillcolor=white, label="anon"]; "@3f646291"->"@76a9a88";  false
+	"@62c2d1cb"[shape=invhouse, style= filled, fillcolor=grey, label="AND"]; "@62c2d1cb"->"@5f3bf208";  false
+	"@79cec5a2"[shape=circle, style= filled, fillcolor=white, label="anon"]; "@79cec5a2"->"@507eaa2a";  false
+	"@be58695"[shape=invtriangle, style= filled, fillcolor=grey, label="NOT"]; "@be58695"->"@9e6a64d";  true
+	"@5fbfb64"[shape=invhouse, style= filled, fillcolor=grey, label="AND"]; "@5fbfb64"->"@27daf9ac";  false
+	"@f7e7b42"[shape=circle, style= filled, fillcolor=red, label="( true ( visited f ) )"]; "@f7e7b42"->"@53f3768a"; "@f7e7b42"->"@38ce3200"; "@f7e7b42"->"@76e77106";  true
+	"@4b262fff"[shape=circle, style= filled, fillcolor=white, label="( goal robot 72 )"];  false
+	"@6a4aa30"[shape=circle, style= filled, fillcolor=white, label="( true ( score 49 ) )"]; "@6a4aa30"->"@69995591"; "@6a4aa30"->"@8b4a216"; "@6a4aa30"->"@6af5722e";  false
+	"@4a6251ca"[shape=circle, style= filled, fillcolor=red, label="( does robot ( move r ) )"]; "@4a6251ca"->"@4a24b278"; "@4a6251ca"->"@f272eeb"; "@4a6251ca"->"@1a11b85e"; "@4a6251ca"->"@301b35b2";  true
+	"@33b2b671"[shape=circle, style= filled, fillcolor=white, label="( goal robot 25 )"];  false
+	"@39ea4a7c"[shape=circle, style= filled, fillcolor=white, label="anon"]; "@39ea4a7c"->"@75f59257";  false
+	"@6a103e9c"[shape=box, style= filled, fillcolor=grey, label="TRANSITION"]; "@6a103e9c"->"@1ceef652";  false
+	"@465bba4f"[shape=circle, style= filled, fillcolor=white, label="( true ( step 12 ) )"]; "@465bba4f"->"@3ac85814";  false
+	"@69995591"[shape=invhouse, style= filled, fillcolor=grey, label="AND"]; "@69995591"->"@188c5056";  false
+	"@170f6ddc"[shape=box, style= filled, fillcolor=grey, label="TRANSITION"]; "@170f6ddc"->"@6afe2828";  false
+	"@2113c01f"[shape=circle, style= filled, fillcolor=white, label="( true ( step 7 ) )"]; "@2113c01f"->"@54980018";  false
+	"@30f8f548"[shape=circle, style= filled, fillcolor=white, label="( true ( step 13 ) )"]; "@30f8f548"->"@28b5aaf5";  false
+	"@310521a1"[shape=box, style= filled, fillcolor=grey, label="TRANSITION"]; "@310521a1"->"@9a134de";  false
+	"@79194352"[shape=circle, style= filled, fillcolor=red, label="anon"]; "@79194352"->"@67c75a85";  true
+	"@430cde2c"[shape=invhouse, style= filled, fillcolor=grey, label="AND"]; "@430cde2c"->"@a83f2cd";  false
+	"@eb49152"[shape=circle, style= filled, fillcolor=white, label="anon"]; "@eb49152"->"@4c4a85c8";  false
+	"@76e77106"[shape=invhouse, style= filled, fillcolor=grey, label="AND"]; "@76e77106"->"@27daf9ac";  false
+	"@97798b7"[shape=circle, style= filled, fillcolor=white, label="anon"]; "@97798b7"->"@6057599a";  false
+	"@4555b536"[shape=circle, style= filled, fillcolor=white, label="( true ( step 17 ) )"]; "@4555b536"->"@7abe20a";  false
+	"@637e43a4"[shape=box, style= filled, fillcolor=grey, label="TRANSITION"]; "@637e43a4"->"@479832fc";  false
+	"@3b2477a9"[shape=circle, style= filled, fillcolor=white, label="( does robot ( move m ) )"]; "@3b2477a9"->"@792a42b0"; "@3b2477a9"->"@1b21a4c1"; "@3b2477a9"->"@50d509b6"; "@3b2477a9"->"@4ace7fbd";  false
+	"@5417c855"[shape=box, style= filled, fillcolor=grey, label="TRANSITION"]; "@5417c855"->"@2c66057";  false
+	"@6c726fe7"[shape=invhouse, style= filled, fillcolor=grey, label="AND"]; "@6c726fe7"->"@27daf9ac";  false
+	"@38ce3200"[shape=invtriangle, style= filled, fillcolor=grey, label="NOT"]; "@38ce3200"->"@6934bb22";  false
+	"@708fad57"[shape=box, style= filled, fillcolor=grey, label="TRANSITION"]; "@708fad57"->"@1dc87877";  true
+	"@5b370556"[shape=invhouse, style= filled, fillcolor=grey, label="AND"]; "@5b370556"->"@57a18078";  false
+	"@5d8a31a4"[shape=box, style= filled, fillcolor=grey, label="TRANSITION"]; "@5d8a31a4"->"@1f431c57";  false
+	"@1bc135f6"[shape=box, style= filled, fillcolor=grey, label="TRANSITION"]; "@1bc135f6"->"@42cf1115";  false
+	"@4994e78"[shape=invtriangle, style= filled, fillcolor=grey, label="NOT"]; "@4994e78"->"@6ceeaaa3";  false
+	"@324e1baf"[shape=circle, style= filled, fillcolor=white, label="anon"]; "@324e1baf"->"@14c3b9b1";  false
+	"@74c1287f"[shape=circle, style= filled, fillcolor=white, label="anon"]; "@74c1287f"->"@5fe4918b";  false
+	"@171881d0"[shape=invhouse, style= filled, fillcolor=grey, label="AND"]; "@171881d0"->"@1ba2ee40";  false
+	"@be330a9"[shape=box, style= filled, fillcolor=grey, label="TRANSITION"]; "@be330a9"->"@6a4aa30";  false
+	"@6af5722e"[shape=invhouse, style= filled, fillcolor=grey, label="AND"]; "@6af5722e"->"@4c0ac8f5";  false
+	"@42af1e6d"[shape=circle, style= filled, fillcolor=white, label="anon"]; "@42af1e6d"->"@751237d8";  false
+	"@6ab64fca"[shape=invtriangle, style= filled, fillcolor=grey, label="NOT"]; "@6ab64fca"->"@67308d81";  true
+	"@23ee4ab1"[shape=circle, style= filled, fillcolor=white, label="anon"]; "@23ee4ab1"->"@70202db8";  false
+	"@3885ceee"[shape=circle, style= filled, fillcolor=white, label="( goal robot 1 )"];  false
+	"@5e5d39fd"[shape=circle, style= filled, fillcolor=red, label="( true ( visited m ) )"]; "@5e5d39fd"->"@792a42b0"; "@5e5d39fd"->"@1b21a4c1"; "@5e5d39fd"->"@3a8a4171";  true
+	"@45806ef5"[shape=circle, style= filled, fillcolor=red, label="anon"]; "@45806ef5"->"@2af04782";  true
+	"@4e776512"[shape=circle, style= filled, fillcolor=white, label="( true ( visited p ) )"]; "@4e776512"->"@190459b3"; "@4e776512"->"@485df366"; "@4e776512"->"@8ca8fd";  false
+	"@73dbb2fd"[shape=circle, style= filled, fillcolor=white, label="( does robot ( move l ) )"]; "@73dbb2fd"->"@6992fa9a"; "@73dbb2fd"->"@eb49152"; "@73dbb2fd"->"@6be35b7d"; "@73dbb2fd"->"@40bbf526";  false
+	"@545cdbe7"[shape=invtriangle, style= filled, fillcolor=grey, label="NOT"]; "@545cdbe7"->"@1c6945f6";  false
+	"@6057599a"[shape=box, style= filled, fillcolor=grey, label="TRANSITION"]; "@6057599a"->"@14305afc";  false
+	"@4a24b278"[shape=invhouse, style= filled, fillcolor=grey, label="AND"]; "@4a24b278"->"@27daf9ac";  true
+	"@44ab8075"[shape=circle, style= filled, fillcolor=white, label="anon"]; "@44ab8075"->"@6bbbee0";  false
+	"@50d509b6"[shape=circle, style= filled, fillcolor=white, label="anon"]; "@50d509b6"->"@1d5f22c2";  false
+	"@1d923058"[shape=box, style= filled, fillcolor=grey, label="TRANSITION"]; "@1d923058"->"@1cb1f6";  false
+	"@6aa1cb9"[shape=ellipse, style= filled, fillcolor=grey, label="OR"]; "@6aa1cb9"->"@a43b91a";  false
+	"@7edf8181"[shape=circle, style= filled, fillcolor=white, label="( goal robot 64 )"];  false
+	"@1fd24d5e"[shape=circle, style= filled, fillcolor=white, label="( true ( step 4 ) )"]; "@1fd24d5e"->"@3f646291";  false
+	"@d45bd3a"[shape=box, style= filled, fillcolor=grey, label="TRANSITION"]; "@d45bd3a"->"@4d9eafea";  false
+	"@299f5d7f"[shape=box, style= filled, fillcolor=grey, label="TRANSITION"]; "@299f5d7f"->"@12bf9aa2";  false
+	"@1249cb76"[shape=circle, style= filled, fillcolor=white, label="( true ( step 14 ) )"]; "@1249cb76"->"@696249d8";  false
+	"@3a284e08"[shape=circle, style= filled, fillcolor=white, label="anon"]; "@3a284e08"->"@5417c855";  false
+	"@40a6445d"[shape=invhouse, style= filled, fillcolor=grey, label="AND"]; "@40a6445d"->"@27daf9ac";  false
+	"@398452d7"[shape=circle, style= filled, fillcolor=white, label="( does robot ( move c ) )"]; "@398452d7"->"@34cfd857"; "@398452d7"->"@499b331"; "@398452d7"->"@4e156ebb"; "@398452d7"->"@6bf04cf8";  false
+	"@7c16bde2"[shape=circle, style= filled, fillcolor=white, label="( true ( score 25 ) )"]; "@7c16bde2"->"@b0cf395"; "@7c16bde2"->"@7ecd1988"; "@7c16bde2"->"@33b2b671";  false
+	"@10cdf1e2"[shape=box, style= filled, fillcolor=grey, label="TRANSITION"]; "@10cdf1e2"->"@6e57533a";  false
+	"@7b278c2d"[shape=ellipse, style= filled, fillcolor=grey, label="OR"]; "@7b278c2d"->"@61641d85";  false
+	"@249a4514"[shape=circle, style= filled, fillcolor=white, label="( does robot ( move g ) )"]; "@249a4514"->"@7e3fae1d"; "@249a4514"->"@67308d81"; "@249a4514"->"@25c9e6a"; "@249a4514"->"@ef4ab95";  false
+	"@6010aa83"[shape=circle, style= filled, fillcolor=white, label="anon"]; "@6010aa83"->"@637e43a4";  false
+	"@37ac5bd6"[shape=circle, style= filled, fillcolor=white, label="anon"]; "@37ac5bd6"->"@48b8abcf";  false
+	"@7ab9aa57"[shape=ellipse, style= filled, fillcolor=grey, label="OR"]; "@7ab9aa57"->"@335e74b3";  true
+	"@6be35b7d"[shape=invhouse, style= filled, fillcolor=grey, label="AND"]; "@6be35b7d"->"@27daf9ac";  false
+	"@35283fe1"[shape=circle, style= filled, fillcolor=white, label="anon"]; "@35283fe1"->"@1f36695d";  false
+	"@17e859c7"[shape=circle, style= filled, fillcolor=white, label="( true ( step 2 ) )"]; "@17e859c7"->"@324e1baf";  false
+	"@f272eeb"[shape=circle, style= filled, fillcolor=red, label="anon"]; "@f272eeb"->"@3edac1b4";  true
+	"@4c1b269c"[shape=circle, style= filled, fillcolor=white, label="anon"]; "@4c1b269c"->"@1bc135f6";  false
+	"@4c76c902"[shape=invhouse, style= filled, fillcolor=grey, label="AND"]; "@4c76c902"->"@28f8946a";  true
+	"@12bf9aa2"[shape=circle, style= filled, fillcolor=white, label="( true ( step 1 ) )"]; "@12bf9aa2"->"@3ba3d5e6";  false
+	"@2d87b480"[shape=circle, style= filled, fillcolor=red, label="( init ( visited a ) )"];  true
+	"@1a816a20"[shape=circle, style= filled, fillcolor=white, label="( does robot ( move q ) )"]; "@1a816a20"->"@49e7f108"; "@1a816a20"->"@40a6445d"; "@1a816a20"->"@5d649104"; "@1a816a20"->"@4cbcd42";  false
+	"@3082ca9c"[shape=circle, style= filled, fillcolor=red, label="anon"]; "@3082ca9c"->"@42a3645d";  true
+	"@1ba2ee40"[shape=ellipse, style= filled, fillcolor=grey, label="OR"]; "@1ba2ee40"->"@65c7b9ec";  false
+	"@493efb42"[shape=circle, style= filled, fillcolor=red, label="anon"]; "@493efb42"->"@4fcfc80b";  true
+	"@2e0c7cd2"[shape=invhouse, style= filled, fillcolor=grey, label="AND"]; "@2e0c7cd2"->"@5f3bf208";  false
+	"@67ed701f"[shape=circle, style= filled, fillcolor=white, label="( legal robot ( move l ) )"];  false
+	"@4df78e7f"[shape=ellipse, style= filled, fillcolor=grey, label="OR"]; "@4df78e7f"->"@37ac5bd6";  false
+	"@65c7b9ec"[shape=circle, style= filled, fillcolor=white, label="anon"]; "@65c7b9ec"->"@3dd41e1d";  false
+	"@7e3fae1d"[shape=ellipse, style= filled, fillcolor=grey, label="OR"]; "@7e3fae1d"->"@6c032ac";  false
+	"@1b21a4c1"[shape=invhouse, style= filled, fillcolor=grey, label="AND"]; "@1b21a4c1"->"@27daf9ac";  false
+	"@3b64ce8d"[shape=circle, style= filled, fillcolor=white, label="anon"]; "@3b64ce8d"->"@2d3f68ad";  false
+	"@13fa1cc8"[shape=ellipse, style= filled, fillcolor=grey, label="OR"]; "@13fa1cc8"->"@97798b7";  false
+	"@50e2fd9e"[shape=box, style= filled, fillcolor=grey, label="TRANSITION"]; "@50e2fd9e"->"@110bafbc";  true
+	"@796c014b"[shape=ellipse, style= filled, fillcolor=grey, label="OR"]; "@796c014b"->"@21c92134";  false
+	"@21c92134"[shape=circle, style= filled, fillcolor=white, label="anon"]; "@21c92134"->"@5d93eedd";  false
+	"@6e747b01"[shape=invhouse, style= filled, fillcolor=grey, label="AND"]; "@6e747b01"->"@1ba2ee40";  false
+	"@63342ebb"[shape=invtriangle, style= filled, fillcolor=grey, label="NOT"]; "@63342ebb"->"@76e829de";  true
+	"@29bdb7b6"[shape=box, style= filled, fillcolor=grey, label="TRANSITION"]; "@29bdb7b6"->"@7c16bde2";  false
+	"@475385b"[shape=circle, style= filled, fillcolor=white, label="( true ( score 100 ) )"]; "@475385b"->"@559ee73d"; "@475385b"->"@179a101a";  false
+	"@32f3af6d"[shape=ellipse, style= filled, fillcolor=grey, label="OR"]; "@32f3af6d"->"@1c82373d";  false
+	"@5fe4918b"[shape=box, style= filled, fillcolor=grey, label="TRANSITION"]; "@5fe4918b"->"@5fa2e78";  false
+	"@693d0da8"[shape=circle, style= filled, fillcolor=white, label="( goal robot 12 )"];  false
+	"@65616f94"[shape=box, style= filled, fillcolor=grey, label="TRANSITION"]; "@65616f94"->"@288f4ede";  true
+	"@1cb1f6"[shape=circle, style= filled, fillcolor=white, label="( true ( visited i ) )"]; "@1cb1f6"->"@5be78d88"; "@1cb1f6"->"@64269d8"; "@1cb1f6"->"@14c15b28";  false
+	"@12aa7a53"[shape=invhouse, style= filled, fillcolor=grey, label="AND"]; "@12aa7a53"->"@57a18078";  false
+	"@3449142c"[shape=ellipse, style= filled, fillcolor=grey, label="OR"]; "@3449142c"->"@29cb6f85";  false
+	"@6d248ff8"[shape=circle, style= filled, fillcolor=white, label="( goal robot 30 )"];  false
+	"@14c3b9b1"[shape=box, style= filled, fillcolor=grey, label="TRANSITION"]; "@14c3b9b1"->"@222f66e2";  false
+	"@a43b91a"[shape=circle, style= filled, fillcolor=white, label="( legal robot ( move j ) )"];  false
+	"@9b6d937"[shape=circle, style= filled, fillcolor=red, label="( goal robot 36 )"];  true
+	"@55bb8c04"[shape=circle, style= filled, fillcolor=white, label="( true ( visited h ) )"]; "@55bb8c04"->"@570be0c5"; "@55bb8c04"->"@be58695"; "@55bb8c04"->"@38576984";  false
+	"@be50010"[shape=box, style= filled, fillcolor=grey, label="TRANSITION"]; "@be50010"->"@64c16e80";  false
+	"@742b568b"[shape=ellipse, style= filled, fillcolor=grey, label="OR"]; "@742b568b"->"@493efb42";  true
+	"@5e0740f8"[shape=circle, style= filled, fillcolor=white, label="anon"]; "@5e0740f8"->"@7f1081f3";  false
+	"@7abe20a"[shape=circle, style= filled, fillcolor=white, label="anon"]; "@7abe20a"->"@66682322";  false
+	"@6af5cf27"[shape=doublecircle, style= filled, fillcolor=grey, label="TRUE"]; "@6af5cf27"->"@2ff3404d"; "@6af5cf27"->"@2d87b480"; "@6af5cf27"->"@738de7db"; "@6af5cf27"->"@1cbc1695";  true
+	"@1f063cae"[shape=ellipse, style= filled, fillcolor=grey, label="OR"]; "@1f063cae"->"@5279d36b";  false
+	"@2c79f235"[shape=invhouse, style= filled, fillcolor=grey, label="AND"]; "@2c79f235"->"@57a18078";  false
+	"@1b7b8bdc"[shape=ellipse, style= filled, fillcolor=grey, label="OR"]; "@1b7b8bdc"->"@4c1b269c";  false
+	"@5642798"[shape=circle, style= filled, fillcolor=white, label="anon"]; "@5642798"->"@1fbbb991";  false
+	"@768af703"[shape=box, style= filled, fillcolor=grey, label="TRANSITION"]; "@768af703"->"@1e9f75bd";  true
+	"@6eb6feef"[shape=invtriangle, style= filled, fillcolor=grey, label="NOT"]; "@6eb6feef"->"@301b35b2";  false
+	"@46632e75"[shape=invhouse, style= filled, fillcolor=grey, label="AND"]; "@46632e75"->"@32f3af6d";  false
+	"@6b069a32"[shape=ellipse, style= filled, fillcolor=grey, label="OR"]; "@6b069a32"->"@7e757f82";  true
+	"@5fa2e78"[shape=circle, style= filled, fillcolor=white, label="( true ( score 4 ) )"]; "@5fa2e78"->"@11f457f1"; "@5fa2e78"->"@2d749b2f"; "@5fa2e78"->"@7e4eb8f9";  false
+	"@3ba3d5e6"[shape=circle, style= filled, fillcolor=white, label="anon"]; "@3ba3d5e6"->"@67672089";  false
+	"@67308d81"[shape=invhouse, style= filled, fillcolor=grey, label="AND"]; "@67308d81"->"@57a18078";  false
+	"@54980018"[shape=circle, style= filled, fillcolor=white, label="anon"]; "@54980018"->"@170f6ddc";  false
+	"@19c0cca7"[shape=invtriangle, style= filled, fillcolor=grey, label="NOT"]; "@19c0cca7"->"@40bbf526";  false
+	"@2904eb34"[shape=circle, style= filled, fillcolor=white, label="( does robot ( move d ) )"]; "@2904eb34"->"@5e0740f8"; "@2904eb34"->"@5fbfb64"; "@2904eb34"->"@6ceeaaa3"; "@2904eb34"->"@45e1cf9f";  false
+	"@6909cbe3"[shape=invhouse, style= filled, fillcolor=grey, label="AND"]; "@6909cbe3"->"@19a360cd";  false
+	"@4aef72e8"[shape=box, style= filled, fillcolor=grey, label="TRANSITION"]; "@4aef72e8"->"@3bff75b9";  false
+	"@56d3d02b"[shape=circle, style= filled, fillcolor=white, label="( does robot ( move i ) )"]; "@56d3d02b"->"@435ed903"; "@56d3d02b"->"@3efd0adb"; "@56d3d02b"->"@64269d8"; "@56d3d02b"->"@14c15b28";  false
+	"@2e6103c7"[shape=box, style= filled, fillcolor=grey, label="TRANSITION"]; "@2e6103c7"->"@1249cb76";  false
+	"@5f7bcb3c"[shape=invhouse, style= filled, fillcolor=grey, label="AND"]; "@5f7bcb3c"->"@1b7f6928";  false
+	"@7f1081f3"[shape=box, style= filled, fillcolor=grey, label="TRANSITION"]; "@7f1081f3"->"@37027447";  false
+	"@6f5ab160"[shape=ellipse, style= filled, fillcolor=grey, label="OR"]; "@6f5ab160"->"@2b334ebd";  false
+	"@630736e9"[shape=box, style= filled, fillcolor=grey, label="TRANSITION"]; "@630736e9"->"@e419167";  false
+	"@1c608f76"[shape=box, style= filled, fillcolor=grey, label="TRANSITION"]; "@1c608f76"->"@55bb8c04";  false
+	"@23f5a573"[shape=circle, style= filled, fillcolor=white, label="anon"]; "@23f5a573"->"@4d5aca41";  false
+	"@4cbcd42"[shape=ellipse, style= filled, fillcolor=grey, label="OR"]; "@4cbcd42"->"@6010aa83";  false
+	"@9306b44"[shape=circle, style= filled, fillcolor=white, label="( legal robot ( move g ) )"];  false
+	"@485e92dd"[shape=circle, style= filled, fillcolor=white, label="( true ( score 0 ) )"]; "@485e92dd"->"@5bd22dc7"; "@485e92dd"->"@9182f09"; "@485e92dd"->"@62e87be7";  false
+	"@76e829de"[shape=invhouse, style= filled, fillcolor=grey, label="AND"]; "@76e829de"->"@57a18078";  false
+	"@5cb9761f"[shape=circle, style= filled, fillcolor=white, label="anon"]; "@5cb9761f"->"@7fde4e30";  false
+	"@499b331"[shape=circle, style= filled, fillcolor=white, label="anon"]; "@499b331"->"@630736e9";  false
+	"@bb19d3d"[shape=invhouse, style= filled, fillcolor=grey, label="AND"]; "@bb19d3d"->"@27daf9ac";  false
+	"@6d0d4e0f"[shape=invhouse, style= filled, fillcolor=grey, label="AND"]; "@6d0d4e0f"->"@19a360cd";  false
+	"@4370280c"[shape=circle, style= filled, fillcolor=white, label="( does robot ( move k ) )"]; "@4370280c"->"@3b64ce8d"; "@4370280c"->"@72f4ba78"; "@4370280c"->"@1c6945f6"; "@4370280c"->"@1f8dd49a";  false
+	"@4d5aca41"[shape=box, style= filled, fillcolor=grey, label="TRANSITION"]; "@4d5aca41"->"@3eac165a";  false
+	"@79b1571e"[shape=invhouse, style= filled, fillcolor=grey, label="AND"]; "@79b1571e"->"@57a18078";  false
+	"@2302dfdb"[shape=circle, style= filled, fillcolor=white, label="anon"]; "@2302dfdb"->"@34e189d0";  false
+	"@1c82373d"[shape=circle, style= filled, fillcolor=white, label="anon"]; "@1c82373d"->"@5bdf72e5";  false
+	"@2d749b2f"[shape=invhouse, style= filled, fillcolor=grey, label="AND"]; "@2d749b2f"->"@5e7d4ecf";  false
+	"@13b041ba"[shape=box, style= filled, fillcolor=grey, label="TRANSITION"]; "@13b041ba"->"@760790d7";  false
+	"@aefd19b"[shape=circle, style= filled, fillcolor=white, label="( legal robot ( move m ) )"];  false
+	"@48b8abcf"[shape=box, style= filled, fillcolor=grey, label="TRANSITION"]; "@48b8abcf"->"@3040a1a4";  false
+	"@60f29be2"[shape=invtriangle, style= filled, fillcolor=grey, label="NOT"]; "@60f29be2"->"@57d84427";  false
+	"@40bbf526"[shape=invhouse, style= filled, fillcolor=grey, label="AND"]; "@40bbf526"->"@57a18078";  false
+	"@1f431c57"[shape=circle, style= filled, fillcolor=white, label="( true ( score 30 ) )"]; "@1f431c57"->"@5f7bcb3c"; "@1f431c57"->"@6d248ff8"; "@1f431c57"->"@21f41e47";  false
+	"@1a559112"[shape=circle, style= filled, fillcolor=white, label="( true ( score 81 ) )"]; "@1a559112"->"@46632e75"; "@1a559112"->"@6e747b01"; "@1a559112"->"@76466cb9";  false
+	"@5fd9af65"[shape=circle, style= filled, fillcolor=white, label="( goal robot 20 )"];  false
+	"@62e87be7"[shape=invhouse, style= filled, fillcolor=grey, label="AND"]; "@62e87be7"->"@52ee436b";  false
+	"@5fb87369"[shape=circle, style= filled, fillcolor=white, label="( true ( location k ) )"]; "@5fb87369"->"@73ce38b6"; "@5fb87369"->"@6aa1cb9"; "@5fb87369"->"@68c00394";  false
+	"@ad3968c"[shape=circle, style= filled, fillcolor=white, label="( true ( location i ) )"]; "@ad3968c"->"@6aa1cb9"; "@ad3968c"->"@62b08d5f"; "@ad3968c"->"@35767073";  false
+	"@16aa76c5"[shape=circle, style= filled, fillcolor=white, label="( does robot ( move a ) )"]; "@16aa76c5"->"@6c726fe7"; "@16aa76c5"->"@6273a64a"; "@16aa76c5"->"@43bae6a9"; "@16aa76c5"->"@742b568b";  false
+	"@7169bce4"[shape=ellipse, style= filled, fillcolor=grey, label="OR"]; "@7169bce4"->"@54f056e7";  false
+	"@1dedccf2"[shape=circle, style= filled, fillcolor=red, label="( true ( score 36 ) )"]; "@1dedccf2"->"@37cc431"; "@1dedccf2"->"@4c76c902"; "@1dedccf2"->"@9b6d937";  true
+	"@4d1ce48c"[shape=ellipse, style= filled, fillcolor=grey, label="OR"]; "@4d1ce48c"->"@23e0cae1";  false
+	"@1cbc1695"[shape=circle, style= filled, fillcolor=red, label="( init ( location a ) )"];  true
+	"@401eb13d"[shape=circle, style= filled, fillcolor=white, label="( legal robot ( move a ) )"];  false
+	"@54dcd0c1"[shape=circle, style= filled, fillcolor=white, label="anon"]; "@54dcd0c1"->"@60081fdf";  false
+	"@6a3ccdc3"[shape=invhouse, style= filled, fillcolor=grey, label="AND"]; "@6a3ccdc3"->"@796c014b";  false
+	"@27bd1ec"[shape=box, style= filled, fillcolor=grey, label="TRANSITION"]; "@27bd1ec"->"@465bba4f";  false
+	"@14305afc"[shape=circle, style= filled, fillcolor=white, label="( true ( score 20 ) )"]; "@14305afc"->"@5fd9af65"; "@14305afc"->"@204d33d3"; "@14305afc"->"@4e718f60";  false
+	"@14eb8915"[shape=circle, style= filled, fillcolor=red, label="anon"]; "@14eb8915"->"@35649aba";  true
+	"@399f2385"[shape=invhouse, style= filled, fillcolor=grey, label="AND"]; "@399f2385"->"@6579e80a";  false
+	"@23893768"[shape=box, style= filled, fillcolor=grey, label="TRANSITION"]; "@23893768"->"@3eb41955";  false
+	"@633c677e"[shape=invhouse, style= filled, fillcolor=grey, label="AND"]; "@633c677e"->"@27daf9ac";  false
+	"@39471187"[shape=circle, style= filled, fillcolor=white, label="( true ( location l ) )"]; "@39471187"->"@49d24212"; "@39471187"->"@4d1ce48c"; "@39471187"->"@69123808";  false
+	"@3dd41e1d"[shape=box, style= filled, fillcolor=grey, label="TRANSITION"]; "@3dd41e1d"->"@57730dad";  false
+	"@3a8a4171"[shape=invtriangle, style= filled, fillcolor=grey, label="NOT"]; "@3a8a4171"->"@4ace7fbd";  false
+	"@64828892"[shape=circle, style= filled, fillcolor=white, label="( goal robot 90 )"];  false
+	"@27daf9ac"[shape=ellipse, style= filled, fillcolor=grey, label="OR"]; "@27daf9ac"->"@193d9fa5";  true
+	"@2b1ccb1c"[shape=circle, style= filled, fillcolor=white, label="( legal robot ( move k ) )"];  false
+	"@b0d8aa9"[shape=invhouse, style= filled, fillcolor=grey, label="AND"]; "@b0d8aa9"->"@6ed98341";  false
+	"@8b4a216"[shape=circle, style= filled, fillcolor=white, label="( goal robot 49 )"];  false
+	"@433cac6c"[shape=invhouse, style= filled, fillcolor=grey, label="AND"]; "@433cac6c"->"@6ed98341";  false
+	"@559157fd"[shape=circle, style= filled, fillcolor=white, label="( goal robot 42 )"];  false
+	"@1b7f6928"[shape=ellipse, style= filled, fillcolor=grey, label="OR"]; "@1b7f6928"->"@49d0cf32";  false
+	"@3949914"[shape=box, style= filled, fillcolor=grey, label="TRANSITION"]; "@3949914"->"@ad3968c";  false
+	"@67672089"[shape=box, style= filled, fillcolor=grey, label="TRANSITION"]; "@67672089"->"@17e859c7";  false
+	"@4ace7fbd"[shape=invhouse, style= filled, fillcolor=grey, label="AND"]; "@4ace7fbd"->"@57a18078";  false
+	"@5bd22dc7"[shape=invhouse, style= filled, fillcolor=grey, label="AND"]; "@5bd22dc7"->"@a83f2cd";  false
+	"@21050ad5"[shape=circle, style= filled, fillcolor=white, label="( true ( step 18 ) )"]; "@21050ad5"->"@5f892ac1";  false
+	"@2bd5d4af"[shape=box, style= filled, fillcolor=grey, label="TRANSITION"]; "@2bd5d4af"->"@6c6a1b3c";  false
+	"@21f41e47"[shape=invhouse, style= filled, fillcolor=grey, label="AND"]; "@21f41e47"->"@28f8946a";  false
+	"@5279d36b"[shape=circle, style= filled, fillcolor=white, label="( legal robot ( move d ) )"];  false
+	"@6fd185cb"[shape=circle, style= filled, fillcolor=white, label="( true ( score 56 ) )"]; "@6fd185cb"->"@4f2305f4"; "@6fd185cb"->"@3289f8ed"; "@6fd185cb"->"@48dcbca";  false
+	"@2b334ebd"[shape=circle, style= filled, fillcolor=white, label="( legal robot ( move e ) )"];  false
+	"@188c5056"[shape=ellipse, style= filled, fillcolor=grey, label="OR"]; "@188c5056"->"@23ee4ab1";  false
+	"@6d4d6524"[shape=circle, style= filled, fillcolor=red, label="anon"]; "@6d4d6524"->"@768af703";  true
+	"@14c15b28"[shape=ellipse, style= filled, fillcolor=grey, label="OR"]; "@14c15b28"->"@2247a9bd";  false
+	"@62b08d5f"[shape=ellipse, style= filled, fillcolor=grey, label="OR"]; "@62b08d5f"->"@35118a97";  false
+	"@acb1b3c"[shape=ellipse, style= filled, fillcolor=grey, label="OR"]; "@acb1b3c"->"@1c6905ad";  false
+	"@1f8dd49a"[shape=invhouse, style= filled, fillcolor=grey, label="AND"]; "@1f8dd49a"->"@27daf9ac";  false
+	"@9e6a64d"[shape=invhouse, style= filled, fillcolor=grey, label="AND"]; "@9e6a64d"->"@57a18078";  false
+	"@559ee73d"[shape=invhouse, style= filled, fillcolor=grey, label="AND"]; "@559ee73d"->"@3549e5bb";  false
+	"@56114df9"[shape=circle, style= filled, fillcolor=white, label="( true ( step 5 ) )"]; "@56114df9"->"@69e077ff";  false
+	"@76a9a88"[shape=box, style= filled, fillcolor=grey, label="TRANSITION"]; "@76a9a88"->"@56114df9";  false
+	"@28b5aaf5"[shape=circle, style= filled, fillcolor=white, label="anon"]; "@28b5aaf5"->"@2e6103c7";  false
+	"@72d07601"[shape=circle, style= filled, fillcolor=white, label="anon"]; "@72d07601"->"@1c608f76";  false
+	"@1c6905ad"[shape=circle, style= filled, fillcolor=white, label="anon"]; "@1c6905ad"->"@29bdb7b6";  false
+	"@95c57a9"[shape=invhouse, style= filled, fillcolor=grey, label="AND"]; "@95c57a9"->"@764ee79f";  false
+	"@b0cf395"[shape=invhouse, style= filled, fillcolor=grey, label="AND"]; "@b0cf395"->"@acb1b3c";  false
+	"@571c3135"[shape=circle, style= filled, fillcolor=red, label="( true ( visited a ) )"]; "@571c3135"->"@6c726fe7"; "@571c3135"->"@742b568b"; "@571c3135"->"@7be2bb40";  true
+	"@3edac1b4"[shape=box, style= filled, fillcolor=grey, label="TRANSITION"]; "@3edac1b4"->"@4f336c07";  true
+	"@f8d2158"[shape=circle, style= filled, fillcolor=red, label="( legal robot ( move q ) )"];  true
+	"@6c6a1b3c"[shape=circle, style= filled, fillcolor=white, label="( true ( visited b ) )"]; "@6c6a1b3c"->"@2a2237bf"; "@6c6a1b3c"->"@4200ad86"; "@6c6a1b3c"->"@1075b52b";  false
+	"@15d8b2b5"[shape=circle, style= filled, fillcolor=white, label="( true ( location f ) )"]; "@15d8b2b5"->"@3449142c"; "@15d8b2b5"->"@6f5ab160"; "@15d8b2b5"->"@1c47644";  false
+	"@764ee79f"[shape=ellipse, style= filled, fillcolor=grey, label="OR"]; "@764ee79f"->"@3648b467";  false
+	"@54f056e7"[shape=circle, style= filled, fillcolor=white, label="anon"]; "@54f056e7"->"@4e6bdd4";  false
+	"@1fc9227e"[shape=circle, style= filled, fillcolor=white, label="anon"]; "@1fc9227e"->"@2bd5d4af";  false
+	"@75f59257"[shape=box, style= filled, fillcolor=grey, label="TRANSITION"]; "@75f59257"->"@6b5b1a7";  false
+	"@288f4ede"[shape=circle, style= filled, fillcolor=red, label="( true ( visited s ) )"]; "@288f4ede"->"@33929334"; "@288f4ede"->"@343ebdaa"; "@288f4ede"->"@5882e59f";  true
+	"@5fea44b8"[shape=box, style= filled, fillcolor=grey, label="TRANSITION"]; "@5fea44b8"->"@485e92dd";  false
+	"@2a2237bf"[shape=invtriangle, style= filled, fillcolor=grey, label="NOT"]; "@2a2237bf"->"@2c79f235";  true
+	"@49d0cf32"[shape=circle, style= filled, fillcolor=white, label="anon"]; "@49d0cf32"->"@5d8a31a4";  false
+	"@5ec6ca90"[shape=circle, style= filled, fillcolor=white, label="( legal robot ( move b ) )"];  false
+	"@479832fc"[shape=circle, style= filled, fillcolor=white, label="( true ( visited q ) )"]; "@479832fc"->"@593b631c"; "@479832fc"->"@40a6445d"; "@479832fc"->"@4cbcd42";  false
+	"@76eadaff"[shape=invtriangle, style= filled, fillcolor=grey, label="NOT"]; "@76eadaff"->"@34cfd857";  false
+	"@20951b15"[shape=circle, style= filled, fillcolor=white, label="( true ( location a ) )"]; "@20951b15"->"@642d5f39"; "@20951b15"->"@6f5ab160"; "@20951b15"->"@62b08d5f";  false
+	"@5e7d4ecf"[shape=ellipse, style= filled, fillcolor=grey, label="OR"]; "@5e7d4ecf"->"@74c1287f";  false
+	"@1fbbb991"[shape=box, style= filled, fillcolor=grey, label="TRANSITION"]; "@1fbbb991"->"@15d8b2b5";  false
+	"@190459b3"[shape=ellipse, style= filled, fillcolor=grey, label="OR"]; "@190459b3"->"@6c9d0399";  false
+	"@12a1dab9"[shape=ellipse, style= filled, fillcolor=grey, label="OR"]; "@12a1dab9"->"@401eb13d";  false
+	"@3eac165a"[shape=circle, style= filled, fillcolor=white, label="( true ( location h ) )"]; "@3eac165a"->"@12a1dab9"; "@3eac165a"->"@1c47644"; "@3eac165a"->"@6b069a32";  false
+	"@8ca8fd"[shape=invtriangle, style= filled, fillcolor=grey, label="NOT"]; "@8ca8fd"->"@12aa7a53";  true
+	"@66682322"[shape=box, style= filled, fillcolor=grey, label="TRANSITION"]; "@66682322"->"@21050ad5";  false
+	"@1b271f2a"[shape=box, style= filled, fillcolor=grey, label="TRANSITION"]; "@1b271f2a"->"@3fec1479";  false
+	"@5f892ac1"[shape=circle, style= filled, fillcolor=white, label="anon"]; "@5f892ac1"->"@10cdf1e2";  false
+	"@49e7f108"[shape=invhouse, style= filled, fillcolor=grey, label="AND"]; "@49e7f108"->"@57a18078";  false
+	"@593b631c"[shape=invtriangle, style= filled, fillcolor=grey, label="NOT"]; "@593b631c"->"@49e7f108";  true
+	"@23ebe52c"[shape=circle, style= filled, fillcolor=white, label="( true ( location q ) )"]; "@23ebe52c"->"@7b278c2d"; "@23ebe52c"->"@1c47644"; "@23ebe52c"->"@35767073";  false
+	"@435ed903"[shape=circle, style= filled, fillcolor=white, label="anon"]; "@435ed903"->"@3949914";  false
+	"@1c6945f6"[shape=invhouse, style= filled, fillcolor=grey, label="AND"]; "@1c6945f6"->"@57a18078";  false
+	"@3040a1a4"[shape=circle, style= filled, fillcolor=white, label="( true ( visited j ) )"]; "@3040a1a4"->"@63342ebb"; "@3040a1a4"->"@1696ff28"; "@3040a1a4"->"@4df78e7f";  false
+	"@5bdf72e5"[shape=box, style= filled, fillcolor=grey, label="TRANSITION"]; "@5bdf72e5"->"@1a559112";  false
+	"@ed8c8e0"[shape=ellipse, style= filled, fillcolor=grey, label="OR"]; "@ed8c8e0"->"@3a6bf1bd";  false
+	"@6c032ac"[shape=circle, style= filled, fillcolor=white, label="anon"]; "@6c032ac"->"@13b041ba";  false
+	"@72d85ae"[shape=invhouse, style= filled, fillcolor=grey, label="AND"]; "@72d85ae"->"@796c014b";  false
+	"@4a601bd8"[shape=invhouse, style= filled, fillcolor=grey, label="AND"]; "@4a601bd8"->"@27daf9ac";  false
+	"@431ed1cf"[shape=box, style= filled, fillcolor=grey, label="TRANSITION"]; "@431ed1cf"->"@495b3b68";  true
+	"@14ad6689"[shape=circle, style= filled, fillcolor=white, label="( goal robot 2 )"];  false
+	"@3ac85814"[shape=circle, style= filled, fillcolor=white, label="anon"]; "@3ac85814"->"@47e2ea2b";  false
+	"@11f457f1"[shape=invhouse, style= filled, fillcolor=grey, label="AND"]; "@11f457f1"->"@7169bce4";  false
+	"@162b1f46"[shape=circle, style= filled, fillcolor=red, label="( legal robot ( move s ) )"];  true
+	"@49d24212"[shape=ellipse, style= filled, fillcolor=grey, label="OR"]; "@49d24212"->"@aefd19b";  false
+	"@2dbb49d"[shape=circle, style= filled, fillcolor=white, label="anon"]; "@2dbb49d"->"@23893768";  false
+	"@45e1cf9f"[shape=ellipse, style= filled, fillcolor=grey, label="OR"]; "@45e1cf9f"->"@6c05f390";  true
+	"@6992fa9a"[shape=ellipse, style= filled, fillcolor=grey, label="OR"]; "@6992fa9a"->"@3082ca9c";  true
+	"@34cfd857"[shape=invhouse, style= filled, fillcolor=grey, label="AND"]; "@34cfd857"->"@57a18078";  false
+	"@65874af1"[shape=circle, style= filled, fillcolor=white, label="anon"]; "@65874af1"->"@30953499";  false
+	"@495b3b68"[shape=circle, style= filled, fillcolor=red, label="( true ( visited d ) )"]; "@495b3b68"->"@4994e78"; "@495b3b68"->"@5fbfb64"; "@495b3b68"->"@45e1cf9f";  true
+	"@1df14d10"[shape=box, style= filled, fillcolor=grey, label="TRANSITION"]; "@1df14d10"->"@4075c0c";  false
+	"@4075c0c"[shape=circle, style= filled, fillcolor=white, label="( true ( location g ) )"]; "@4075c0c"->"@7a882061"; "@4075c0c"->"@612432f3"; "@4075c0c"->"@62b08d5f";  false
+	"@3289f8ed"[shape=invhouse, style= filled, fillcolor=grey, label="AND"]; "@3289f8ed"->"@188c5056";  false
+	"@6c181056"[shape=invhouse, style= filled, fillcolor=grey, label="AND"]; "@6c181056"->"@764ee79f";  false
+	"@6bbbee0"[shape=box, style= filled, fillcolor=grey, label="TRANSITION"]; "@6bbbee0"->"@27a88231";  false
+	"@256f0c53"[shape=box, style= filled, fillcolor=grey, label="TRANSITION"]; "@256f0c53"->"@61b4632b";  false
+	"@20fe573e"[shape=circle, style= filled, fillcolor=red, label="anon"]; "@20fe573e"->"@708fad57";  true
+	"@6602f59a"[shape=box, style= filled, fillcolor=grey, label="TRANSITION"]; "@6602f59a"->"@7039fba0";  true
+	"@6c9d0399"[shape=circle, style= filled, fillcolor=white, label="anon"]; "@6c9d0399"->"@6678b98e";  false
+	"@4f2305f4"[shape=circle, style= filled, fillcolor=white, label="( goal robot 56 )"];  false
+	"@7e28fd30"[shape=circle, style= filled, fillcolor=white, label="anon"]; "@7e28fd30"->"@40c3350c";  false
+	"@7a0c8c62"[shape=circle, style= filled, fillcolor=white, label="( does robot ( move b ) )"]; "@7a0c8c62"->"@4200ad86"; "@7a0c8c62"->"@2c79f235"; "@7a0c8c62"->"@1075b52b"; "@7a0c8c62"->"@65874af1";  false
+	"@5949f12"[shape=box, style= filled, fillcolor=grey, label="TRANSITION"]; "@5949f12"->"@571c3135";  true
+	"@9a134de"[shape=circle, style= filled, fillcolor=white, label="( true ( score 9 ) )"]; "@9a134de"->"@6a3ccdc3"; "@9a134de"->"@6c181056"; "@9a134de"->"@6fb4f5d9";  false
+	"@485df366"[shape=invhouse, style= filled, fillcolor=grey, label="AND"]; "@485df366"->"@27daf9ac";  false
+	"@57d7d029"[shape=circle, style= filled, fillcolor=red, label="anon"]; "@57d7d029"->"@18ab246f";  true
+	"@6bf04cf8"[shape=ellipse, style= filled, fillcolor=grey, label="OR"]; "@6bf04cf8"->"@6d4d6524";  true
+	"@7e757f82"[shape=circle, style= filled, fillcolor=red, label="( legal robot ( move i ) )"];  true
+}

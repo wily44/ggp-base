@@ -2,8 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8d760366-d5ac-4bb2-aa8c-a4e4bb42b0c0" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/org/ggp/base/util/statemachine/implementation/glados/GladosPropNetStateMachine.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/org/ggp/base/player/gamer/statemachine/sample/MyPropnetTester.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/ggp/base/util/statemachine/cache/CachedStateMachine.java" afterPath="$PROJECT_DIR$/src/org/ggp/base/util/statemachine/cache/CachedStateMachine.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/ggp/base/player/gamer/statemachine/glados/GladosGamer.java" afterPath="$PROJECT_DIR$/src/org/ggp/base/player/gamer/statemachine/glados/GladosGamer.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/ggp/base/player/gamer/statemachine/glados/WilburGamer.java" afterPath="$PROJECT_DIR$/src/org/ggp/base/player/gamer/statemachine/glados/WilburGamer.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/ggp/base/util/propnet/architecture/PropNet.java" afterPath="$PROJECT_DIR$/src/org/ggp/base/util/propnet/architecture/PropNet.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/ggp/base/util/statemachine/implementation/prover/ProverStateMachine.java" afterPath="$PROJECT_DIR$/src/org/ggp/base/util/statemachine/implementation/prover/ProverStateMachine.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/ggp/base/player/gamer/statemachine/sample/SampleGamer.java" afterPath="$PROJECT_DIR$/src/org/ggp/base/player/gamer/statemachine/sample/SampleGamer.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/ggp/base/player/gamer/statemachine/sample/SampleMonteCarloGamer.java" afterPath="$PROJECT_DIR$/src/org/ggp/base/player/gamer/statemachine/sample/SampleMonteCarloGamer.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="ggp-base.iws" />
@@ -67,82 +73,158 @@
     <favorites_list name="ggp-base" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="GladosGamer.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/org/ggp/base/player/gamer/statemachine/glados/GladosGamer.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="585" column="25" selection-start="24274" selection-end="24274" vertical-scroll-proportion="0.6084829" vertical-offset="13667" max-vertical-offset="15792">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="OptimizingPropNetFactory.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/org/ggp/base/util/propnet/factory/OptimizingPropNetFactory.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="96" column="50" selection-start="4653" selection-end="4653" vertical-scroll-proportion="0.0" vertical-offset="360" max-vertical-offset="35448">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PropNetConverter.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/org/ggp/base/util/propnet/factory/converter/PropNetConverter.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="33" column="70" selection-start="1365" selection-end="1365" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="7416">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PropNet.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/org/ggp/base/util/propnet/architecture/PropNet.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="121" column="96" selection-start="5187" selection-end="5187" vertical-scroll-proportion="0.0" vertical-offset="9214" max-vertical-offset="12144">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PropNetAnnotater.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/org/ggp/base/util/propnet/factory/annotater/PropNetAnnotater.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="38" column="45" selection-start="1327" selection-end="1327" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="16128">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Player.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/org/ggp/base/apps/player/Player.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="104" column="49" selection-start="3075" selection-end="3075" vertical-scroll-proportion="0.0" vertical-offset="2496" max-vertical-offset="4176">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="StateMachineGamer.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/org/ggp/base/player/gamer/statemachine/StateMachineGamer.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="214" column="0" selection-start="8006" selection-end="8006" vertical-scroll-proportion="0.0" vertical-offset="5136" max-vertical-offset="6432">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="WilburGamer.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/org/ggp/base/player/gamer/statemachine/glados/WilburGamer.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="502" column="49" selection-start="21348" selection-end="21348" vertical-scroll-proportion="0.0" vertical-offset="11781" max-vertical-offset="15696">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <splitter split-orientation="horizontal" split-proportion="0.57348245">
+      <split-first>
+        <leaf>
+          <file leaf-file-name="SampleMonteCarloGamer.java" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/org/ggp/base/player/gamer/statemachine/sample/SampleMonteCarloGamer.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="82" column="33" selection-start="3268" selection-end="3268" vertical-scroll-proportion="0.0" vertical-offset="929" max-vertical-offset="1479">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="SampleGamer.java" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/org/ggp/base/player/gamer/statemachine/sample/SampleGamer.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="28" column="48" selection-start="1395" selection-end="1395" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1139">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="StateMachineGamer.java" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/org/ggp/base/player/gamer/statemachine/StateMachineGamer.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="105" column="39" selection-start="3996" selection-end="3996" vertical-scroll-proportion="0.0" vertical-offset="1938" max-vertical-offset="4131">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="RandomGamer.java" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/org/ggp/base/player/gamer/statemachine/random/RandomGamer.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="29" column="30" selection-start="1188" selection-end="1188" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1105">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="SampleNoopGamer.java" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/org/ggp/base/player/gamer/statemachine/sample/SampleNoopGamer.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="14" column="19" selection-start="655" selection-end="655" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="442">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="SampleSearchLightGamer.java" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/org/ggp/base/player/gamer/statemachine/sample/SampleSearchLightGamer.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="172" column="11" selection-start="7671" selection-end="7838" vertical-scroll-proportion="0.0" vertical-offset="2550" max-vertical-offset="3213">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="PropNetConverter.java" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/org/ggp/base/util/propnet/factory/converter/PropNetConverter.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="284" column="64" selection-start="8193" selection-end="8193" vertical-scroll-proportion="0.0" vertical-offset="2244" max-vertical-offset="5253">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="GladosPropNetStateMachine.java" pinned="false" current="true" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/org/ggp/base/util/statemachine/implementation/glados/GladosPropNetStateMachine.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="92" column="70" selection-start="3437" selection-end="3437" vertical-scroll-proportion="0.49275362" vertical-offset="1020" max-vertical-offset="5083">
+                  <folding>
+                    <element signature="e#4042#4048#0" expanded="true" />
+                    <element signature="e#5808#5819#0" expanded="true" />
+                    <element signature="e#8556#8557#0" expanded="true" />
+                    <element signature="e#8584#8585#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="Transition.java" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/org/ggp/base/util/propnet/architecture/components/Transition.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="22" column="46" selection-start="541" selection-end="541" vertical-scroll-proportion="0.0" vertical-offset="86" max-vertical-offset="595">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="MyPropnetTester.java" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/org/ggp/base/player/gamer/statemachine/sample/MyPropnetTester.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="39" column="68" selection-start="1770" selection-end="1770" vertical-scroll-proportion="0.0" vertical-offset="2499" max-vertical-offset="3094">
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf>
+          <file leaf-file-name="ProverStateMachine.java" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/org/ggp/base/util/statemachine/implementation/prover/ProverStateMachine.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="29" column="49" selection-start="1199" selection-end="1199" vertical-scroll-proportion="0.0" vertical-offset="918" max-vertical-offset="1802">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="Proposition.java" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/org/ggp/base/util/propnet/architecture/components/Proposition.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="4" column="25" selection-start="167" selection-end="167" vertical-scroll-proportion="0.0" vertical-offset="749" max-vertical-offset="1258">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="AimaProver.java" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/org/ggp/base/util/prover/aima/AimaProver.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="181" column="53" selection-start="6200" selection-end="6200" vertical-scroll-proportion="0.0" vertical-offset="3077" max-vertical-offset="3400">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="PropNet.java" pinned="false" current="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/org/ggp/base/util/propnet/architecture/PropNet.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="245" column="82" selection-start="7864" selection-end="7864" vertical-scroll-proportion="0.5851064" vertical-offset="3244" max-vertical-offset="8602">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="OptimizingPropNetFactory.java" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/org/ggp/base/util/propnet/factory/OptimizingPropNetFactory.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="73" column="45" selection-start="3284" selection-end="3284" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="25109">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-second>
+    </splitter>
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -156,7 +238,15 @@
     <option name="changedFiles">
       <list>
         <option value="$PROJECT_DIR$/src/org/ggp/base/player/gamer/statemachine/glados/WilburGamer.java" />
+        <option value="$PROJECT_DIR$/src/org/ggp/base/util/statemachine/cache/CachedStateMachine.java" />
+        <option value="$PROJECT_DIR$/propnet_visualization.dot" />
         <option value="$PROJECT_DIR$/src/org/ggp/base/player/gamer/statemachine/glados/GladosGamer.java" />
+        <option value="$PROJECT_DIR$/src/org/ggp/base/util/statemachine/implementation/prover/ProverStateMachine.java" />
+        <option value="$PROJECT_DIR$/src/org/ggp/base/player/gamer/statemachine/sample/SampleMonteCarloGamer.java" />
+        <option value="$PROJECT_DIR$/src/org/ggp/base/player/gamer/statemachine/sample/SampleGamer.java" />
+        <option value="$PROJECT_DIR$/src/org/ggp/base/util/propnet/architecture/PropNet.java" />
+        <option value="$PROJECT_DIR$/src/org/ggp/base/player/gamer/statemachine/sample/MyPropnetTester.java" />
+        <option value="$PROJECT_DIR$/src/org/ggp/base/util/statemachine/implementation/glados/GladosPropNetStateMachine.java" />
       </list>
     </option>
   </component>
@@ -248,6 +338,20 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="PackagesPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ggp-base" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GGP_Base" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -303,6 +407,164 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="util" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ggp-base" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ggp-base" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="base" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="util" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="statemachine" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ggp-base" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ggp-base" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="base" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="util" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="statemachine" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="implementation" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="prover" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ggp-base" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ggp-base" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="base" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="util" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="statemachine" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="implementation" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="propnet" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ggp-base" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ggp-base" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="base" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="util" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="statemachine" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="implementation" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="glados" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ggp-base" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ggp-base" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="base" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="util" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="statemachine" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cache" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -465,6 +727,40 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="architecture" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ggp-base" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ggp-base" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="base" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="util" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="propnet" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="architecture" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="components" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -772,20 +1068,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane">
-        <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ggp-base" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="GGP_Base" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
       <pane id="Scope" />
     </panes>
   </component>
@@ -811,15 +1093,16 @@
     <property name="OverrideImplement.overriding.sorted" value="false" />
     <property name="last_opened_file_path" value="$USER_HOME$/IdeaProjects/CS161Idea" />
     <property name="full.screen.before.presentation.mode" value="false" />
+    <property name="restartRequiresConfirmation" value="true" />
   </component>
   <component name="RunManager" selected="Application.Player">
     <configuration default="false" name="Player" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.ggp.base.apps.player.Player" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="VM_PARAMETERS" value="-Xss9999k" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ALTERNATIVE_JRE_PATH" value="" />
       <option name="ENABLE_SWING_INSPECTOR" value="false" />
       <option name="ENV_VARIABLES" />
       <option name="PASS_PARENT_ENVS" value="true" />
@@ -1027,25 +1310,50 @@
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.29589632" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2948164" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32937366" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22204472" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2926566" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.14962727" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.39956802" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32937366" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
+    <layout-to-restore>
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2948164" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32937366" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.14962727" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3736501" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+    </layout-to-restore>
   </component>
   <component name="Vcs.Log.UiProperties">
     <option name="RECENTLY_FILTERED_USERS">
@@ -1068,138 +1376,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/org/ggp/base/validator/StaticValidator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="121" column="36" selection-start="5465" selection-end="5465" vertical-scroll-proportion="0.0" vertical-offset="2057" max-vertical-offset="11424" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/ggp/base/player/gamer/statemachine/sample/SampleGamer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="47" selection-start="963" selection-end="963" vertical-scroll-proportion="0.0" vertical-offset="289" max-vertical-offset="1309">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/ggp/base/apps/server/Server.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="282" column="76" selection-start="14129" selection-end="14129" vertical-scroll-proportion="0.0" vertical-offset="4794" max-vertical-offset="5185">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/ggp/base/player/gamer/statemachine/sample/SampleSearchLightGamer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="42" column="57" selection-start="2067" selection-end="2067" vertical-scroll-proportion="0.0" vertical-offset="714" max-vertical-offset="3502">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/ggp/base/player/gamer/statemachine/random/RandomGamer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="30" selection-start="1165" selection-end="1187" vertical-scroll-proportion="0.0" vertical-offset="442" max-vertical-offset="1360">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/ggp/base/player/gamer/statemachine/glados/GladosGamer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="68" selection-start="446" selection-end="446" vertical-scroll-proportion="0.0" vertical-offset="80" max-vertical-offset="3009">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/ggp/base/player/gamer/statemachine/StateMachineGamer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="56" selection-start="1400" selection-end="1400" vertical-scroll-proportion="0.0" vertical-offset="544" max-vertical-offset="4556">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.classpath">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="459" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/ggp/base/player/gamer/statemachine/sample/SampleLegalGamer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="56" selection-start="1191" selection-end="1191" vertical-scroll-proportion="0.0" vertical-offset="561" max-vertical-offset="1071">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/ggp/base/apps/player/Player.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="52" column="67" selection-start="1479" selection-end="1479" vertical-scroll-proportion="0.0" vertical-offset="884" max-vertical-offset="2958">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/ggp/base/validator/StaticValidator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="121" column="36" selection-start="5465" selection-end="5465" vertical-scroll-proportion="0.0" vertical-offset="2057" max-vertical-offset="11424" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/ggp/base/player/gamer/statemachine/sample/SampleGamer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="47" selection-start="963" selection-end="963" vertical-scroll-proportion="0.0" vertical-offset="289" max-vertical-offset="1309">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/ggp/base/apps/server/Server.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="282" column="76" selection-start="14129" selection-end="14129" vertical-scroll-proportion="0.0" vertical-offset="4794" max-vertical-offset="5185">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/ggp/base/player/gamer/statemachine/sample/SampleSearchLightGamer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="42" column="57" selection-start="2067" selection-end="2067" vertical-scroll-proportion="0.0" vertical-offset="714" max-vertical-offset="3502">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/ggp/base/player/gamer/statemachine/random/RandomGamer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="38" column="88" selection-start="1578" selection-end="1578" vertical-scroll-proportion="0.0" vertical-offset="646" max-vertical-offset="1105">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/ggp/base/player/gamer/statemachine/StateMachineGamer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="56" selection-start="1400" selection-end="1400" vertical-scroll-proportion="0.0" vertical-offset="544" max-vertical-offset="4556">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.classpath">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="459" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/ggp/base/player/gamer/statemachine/sample/SampleLegalGamer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="56" selection-start="1191" selection-end="1191" vertical-scroll-proportion="0.0" vertical-offset="561" max-vertical-offset="1071">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/ggp/base/apps/player/Player.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="40" selection-start="33" selection-end="33" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2958">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/ggp/base/validator/StaticValidator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="60" column="64" selection-start="2559" selection-end="2559" vertical-scroll-proportion="0.0" vertical-offset="1020" max-vertical-offset="10710" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.classpath">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="459" />
@@ -1296,20 +1472,6 @@
         <state line="121" column="36" selection-start="5465" selection-end="5465" vertical-scroll-proportion="0.0" vertical-offset="1020" max-vertical-offset="10710" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/ggp/base/player/gamer/statemachine/sample/SampleSearchLightGamer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="42" column="57" selection-start="2067" selection-end="2067" vertical-scroll-proportion="0.0" vertical-offset="1377" max-vertical-offset="3213">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/ggp/base/player/gamer/statemachine/random/RandomGamer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="30" selection-start="1165" selection-end="1187" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1105">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.7.0_25/src.zip!/java/util/Iterator.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="71" column="47" selection-start="1639" selection-end="1639" vertical-scroll-proportion="0.58444446" vertical-offset="290" max-vertical-offset="1190" />
@@ -1322,30 +1484,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/ggp/base/player/gamer/statemachine/sample/SampleLegalGamer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="57" selection-start="860" selection-end="860" vertical-scroll-proportion="0.39215687" vertical-offset="374" max-vertical-offset="1701">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/ggp/base/player/gamer/statemachine/sample/SampleGamer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="39" column="29" selection-start="1674" selection-end="1674" vertical-scroll-proportion="0.69518715" vertical-offset="663" max-vertical-offset="2079">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/org/ggp/base/util/statemachine/StateMachine.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="148" column="60" selection-start="6293" selection-end="6293" vertical-scroll-proportion="0.08906426" vertical-offset="3137" max-vertical-offset="9288" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/ggp/base/player/gamer/statemachine/StateMachineGamer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="214" column="0" selection-start="8006" selection-end="8006" vertical-scroll-proportion="0.0" vertical-offset="4329" max-vertical-offset="5832">
-          <folding />
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/org/ggp/base/apps/player/Player.java">
@@ -1357,44 +1498,227 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/org/ggp/base/player/gamer/statemachine/glados/WilburGamer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="502" column="49" selection-start="21348" selection-end="21348" vertical-scroll-proportion="0.0" vertical-offset="11781" max-vertical-offset="15696">
+        <state line="502" column="13" selection-start="21348" selection-end="21348" vertical-scroll-proportion="0.0" vertical-offset="11781" max-vertical-offset="15696">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/ggp/base/util/propnet/factory/OptimizingPropNetFactory.java">
+    <entry file="file://$PROJECT_DIR$/src/org/ggp/base/util/propnet/factory/flattener/PropNetFlattener.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="96" column="50" selection-start="4653" selection-end="4653" vertical-scroll-proportion="0.0" vertical-offset="360" max-vertical-offset="35448">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/ggp/base/util/propnet/architecture/PropNet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="121" column="96" selection-start="5187" selection-end="5187" vertical-scroll-proportion="0.0" vertical-offset="9214" max-vertical-offset="12144">
+        <state line="43" column="34" selection-start="1532" selection-end="1532" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="18648">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/org/ggp/base/util/propnet/factory/annotater/PropNetAnnotater.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="38" column="45" selection-start="1327" selection-end="1327" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="16128">
+        <state line="147" column="48" selection-start="4660" selection-end="4660" vertical-scroll-proportion="0.0" vertical-offset="543" max-vertical-offset="11424">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/ggp/base/util/propnet/factory/converter/PropNetConverter.java">
+    <entry file="file://$PROJECT_DIR$/src/org/ggp/base/util/propnet/factory/PropNetFactory.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="70" selection-start="1365" selection-end="1365" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="7416">
+        <state line="39" column="33" selection-start="1358" selection-end="1358" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="663">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/ggp/base/util/statemachine/implementation/prover/query/ProverQueryBuilder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="32" column="28" selection-start="1579" selection-end="1579" vertical-scroll-proportion="0.36414883" vertical-offset="0" max-vertical-offset="1054">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/ggp/base/util/prover/Prover.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="22" selection-start="131" selection-end="131" vertical-scroll-proportion="0.075555556" vertical-offset="0" max-vertical-offset="900">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/ggp/base/util/statemachine/MachineState.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="28" column="19" selection-start="845" selection-end="845" vertical-scroll-proportion="0.0" vertical-offset="292" max-vertical-offset="1173">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/ggp/base/util/statemachine/cache/CachedStateMachine.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="32" column="110" selection-start="1102" selection-end="1102" vertical-scroll-proportion="0.0" vertical-offset="153" max-vertical-offset="2278">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/ggp/base/util/gdl/grammar/GdlSentence.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="22" selection-start="114" selection-end="114" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="527">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/ggp/base/util/statemachine/implementation/propnet/SamplePropNetStateMachine.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="175" column="71" selection-start="5637" selection-end="5637" vertical-scroll-proportion="0.0" vertical-offset="2975" max-vertical-offset="3621">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/propnet_visualization.dot">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2576" column="66" selection-start="293487" selection-end="293487" vertical-scroll-proportion="0.0" vertical-offset="43635" max-vertical-offset="44455">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/ggp/base/util/prover/aima/AimaProver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="181" column="53" selection-start="6200" selection-end="6200" vertical-scroll-proportion="0.0" vertical-offset="2088" max-vertical-offset="3026">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/org/ggp/base/player/gamer/statemachine/glados/GladosGamer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="585" column="25" selection-start="24274" selection-end="24274" vertical-scroll-proportion="0.6084829" vertical-offset="13667" max-vertical-offset="15792">
+        <state line="600" column="54" selection-start="25042" selection-end="25042" vertical-scroll-proportion="0.0" vertical-offset="9214" max-vertical-offset="10880">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/ggp/base/util/propnet/architecture/components/Constant.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="19" selection-start="253" selection-end="253" vertical-scroll-proportion="0.15472127" vertical-offset="0" max-vertical-offset="879">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/ggp/base/player/gamer/statemachine/sample/SampleSearchLightGamer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="172" column="11" selection-start="7671" selection-end="7838" vertical-scroll-proportion="0.0" vertical-offset="2550" max-vertical-offset="3213">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/ggp/base/player/gamer/statemachine/sample/SampleMonteCarloGamer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="82" column="33" selection-start="3268" selection-end="3268" vertical-scroll-proportion="0.0" vertical-offset="929" max-vertical-offset="1479">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src_clj/sample_gamer.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="28" selection-start="510" selection-end="510" vertical-scroll-proportion="0.37678573" vertical-offset="27" max-vertical-offset="612">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/ggp/base/player/gamer/statemachine/StateMachineGamer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="105" column="39" selection-start="3996" selection-end="3996" vertical-scroll-proportion="0.0" vertical-offset="1938" max-vertical-offset="4131">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/ggp/base/player/gamer/statemachine/random/RandomGamer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="29" column="30" selection-start="1188" selection-end="1188" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1105">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/ggp/base/player/gamer/statemachine/sample/SampleLegalGamer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="45" column="68" selection-start="1663" selection-end="1663" vertical-scroll-proportion="0.0" vertical-offset="124" max-vertical-offset="969">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/ggp/base/player/gamer/statemachine/sample/SampleGamer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="28" column="48" selection-start="1395" selection-end="1395" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1139">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/ggp/base/util/statemachine/implementation/prover/ProverStateMachine.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="29" column="49" selection-start="1199" selection-end="1199" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1802">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/ggp/base/util/propnet/factory/OptimizingPropNetFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="73" column="45" selection-start="3284" selection-end="3284" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="25109">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/ggp/base/util/propnet/architecture/Component.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="96" column="24" selection-start="2000" selection-end="2000" vertical-scroll-proportion="3.221774" vertical-offset="0" max-vertical-offset="2652">
+          <folding>
+            <element signature="e#1599#1600#0" expanded="true" />
+            <element signature="e#1628#1629#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/ggp/base/util/propnet/architecture/components/Transition.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="46" selection-start="541" selection-end="541" vertical-scroll-proportion="0.0" vertical-offset="86" max-vertical-offset="595">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/ggp/base/util/propnet/architecture/components/Proposition.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="25" selection-start="167" selection-end="167" vertical-scroll-proportion="0.0" vertical-offset="749" max-vertical-offset="1258">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/ggp/base/util/propnet/architecture/PropNet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="245" column="82" selection-start="7864" selection-end="7864" vertical-scroll-proportion="0.5851064" vertical-offset="3244" max-vertical-offset="8602">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/ggp/base/util/propnet/factory/converter/PropNetConverter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="284" column="64" selection-start="8193" selection-end="8193" vertical-scroll-proportion="0.0" vertical-offset="2244" max-vertical-offset="5253">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/ggp/base/player/gamer/statemachine/sample/SampleNoopGamer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="19" selection-start="655" selection-end="655" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="442">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/ggp/base/player/gamer/statemachine/sample/MyPropnetTester.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="39" column="68" selection-start="1770" selection-end="1770" vertical-scroll-proportion="0.0" vertical-offset="2499" max-vertical-offset="3094">
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/ggp/base/util/statemachine/implementation/glados/GladosPropNetStateMachine.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="92" column="70" selection-start="3437" selection-end="3437" vertical-scroll-proportion="0.49275362" vertical-offset="1020" max-vertical-offset="5083">
+          <folding>
+            <element signature="e#4042#4048#0" expanded="true" />
+            <element signature="e#5808#5819#0" expanded="true" />
+            <element signature="e#8556#8557#0" expanded="true" />
+            <element signature="e#8584#8585#0" expanded="true" />
           </folding>
         </state>
       </provider>

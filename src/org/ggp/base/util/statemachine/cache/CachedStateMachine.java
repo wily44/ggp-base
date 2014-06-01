@@ -1,9 +1,5 @@
 package org.ggp.base.util.statemachine.cache;
 
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-
 import org.ggp.base.util.gdl.grammar.Gdl;
 import org.ggp.base.util.statemachine.MachineState;
 import org.ggp.base.util.statemachine.Move;
@@ -12,6 +8,10 @@ import org.ggp.base.util.statemachine.StateMachine;
 import org.ggp.base.util.statemachine.exceptions.GoalDefinitionException;
 import org.ggp.base.util.statemachine.exceptions.MoveDefinitionException;
 import org.ggp.base.util.statemachine.exceptions.TransitionDefinitionException;
+
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 
 public final class CachedStateMachine extends StateMachine
 {

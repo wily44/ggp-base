@@ -493,6 +493,7 @@ public class GladosGamer extends SampleGamer {
     @Override
     public StateMachine getInitialStateMachine() {
         return new CachedStateMachine(new ProverStateMachine());
+        //return new CachedStateMachine(new GladosPropNetStateMachine());
     }
 
     @Override
