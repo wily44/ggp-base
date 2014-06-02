@@ -9,7 +9,7 @@ import org.ggp.base.util.statemachine.cache.CachedStateMachine;
 import org.ggp.base.util.statemachine.exceptions.GoalDefinitionException;
 import org.ggp.base.util.statemachine.exceptions.MoveDefinitionException;
 import org.ggp.base.util.statemachine.exceptions.TransitionDefinitionException;
-import org.ggp.base.util.statemachine.implementation.glados.GladosPropNetStateMachine;
+import org.ggp.base.util.statemachine.implementation.glados.GladosCompiledPropNetStateMachine;
 import org.ggp.base.util.statemachine.implementation.prover.ProverStateMachine;
 
 import java.util.List;
@@ -32,7 +32,7 @@ public final class MyPropnetTester extends SampleGamer
         List gdlDescription = psm.gdlDescription;
 
         // The only line you have to adapt in this file
-        StateMachine stateMachineX = new CachedStateMachine(new GladosPropNetStateMachine());
+        StateMachine stateMachineX = new CachedStateMachine(new GladosCompiledPropNetStateMachine());
 
         stateMachineX.initialize(gdlDescription);
 

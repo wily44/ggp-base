@@ -146,6 +146,7 @@
         <SOURCES />
       </library>
     </orderEntry>
+    <orderEntry type="library" name="javassist24" level="project" />
   </component>
 </module>
 

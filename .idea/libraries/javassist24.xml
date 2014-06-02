@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="javassist24">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/javassist24.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
