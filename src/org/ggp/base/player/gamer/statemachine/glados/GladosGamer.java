@@ -1,5 +1,10 @@
 package org.ggp.base.player.gamer.statemachine.glados;
 
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
 import org.ggp.base.apps.player.detail.DetailPanel;
 import org.ggp.base.apps.player.detail.SimpleDetailPanel;
 import org.ggp.base.player.gamer.event.GamerSelectedMoveEvent;
@@ -15,12 +20,6 @@ import org.ggp.base.util.statemachine.exceptions.GoalDefinitionException;
 import org.ggp.base.util.statemachine.exceptions.MoveDefinitionException;
 import org.ggp.base.util.statemachine.exceptions.TransitionDefinitionException;
 import org.ggp.base.util.statemachine.implementation.glados.GladosCompiledPropNetStateMachine;
-import org.ggp.base.util.statemachine.implementation.glados.GladosPropNetStateMachine;
-
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
 
 /**
  * Created on 5/24/14.
@@ -203,6 +202,13 @@ public class GladosGamer extends SampleGamer {
     private void updateTreeSP(long timeout) throws MoveDefinitionException, TransitionDefinitionException, GoalDefinitionException {
         while (System.currentTimeMillis() < timeout) {
             MCTSNodeSP currnode = MachineStateMapSP.get(getCurrentState());
+            if(currnode == null) { // make a new root node!
+                //MachineStateMapMP = new HashMap<>();
+				System.out.println("MISS !!!");
+                MachineStateMapSP.put(getCurrentState(), new MCTSNodeSP(null, getCurrentState()));
+            }
+            currnode = MachineStateMapSP.get(getCurrentState());
+            if (currnode.visits == 0) System.out.println("MISS !");
             while (!expandSP(currnode) && System.currentTimeMillis() < timeout) {
                 currnode = selectionSP(currnode);
             }
