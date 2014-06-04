@@ -1,19 +1,19 @@
 package org.ggp.base.util.statemachine.implementation.glados;
 
 public class FastPropNet {
-    public boolean[] props; // non-base or input
-    public boolean[] baseProps;
-    public boolean[] inputProps;
+    public boolean[] p; // non-base or input
+    public boolean[] b;
+    public boolean[] n;
     public FastPropNet() {
 
     }
     public FastPropNet(int numNonBaseOrInputProps, boolean[] b, boolean[] i) {
-        baseProps = b;
-        inputProps = i;
-        props = new boolean[numNonBaseOrInputProps];
+        this.b = b;
+        n = i;
+        p = new boolean[numNonBaseOrInputProps];
     }
     public void setMoves(boolean[] moves) {
-        inputProps = moves;
+        n = moves;
     }
     public void propagate() {
 

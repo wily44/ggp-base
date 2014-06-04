@@ -243,7 +243,7 @@ public final class PropNet
 		sb.append("digraph propNet\n{\n");
 		for ( Component component : components )
 		{
-			sb.append("\t" + component.toString() + " " + component.getValue() + "\n");
+			sb.append("\t" + component.toString() + "\n");
 		}
 		sb.append("}");
 

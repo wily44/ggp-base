@@ -121,7 +121,7 @@ public class PropNetAnnotater {
         body.addAll(universe);
         universalDom = GdlPool.getFunction(GdlPool.getConstant("thing"), body);
 
-        //Find next/init things and use them to instantiate base props
+        //Find next/init things and use them to instantiate base p
         for(Gdl gdl : description)
         {
             findAndInstantiateBaseProps(gdl);

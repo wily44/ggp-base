@@ -50,7 +50,7 @@ public class GladosCompiledPropNetStateMachine extends StateMachine {
      */
     @Override
     public void initialize(List<Gdl> description) {
-        className = "FastPropNet" + (int)(Math.random() * 100000000);
+        className = "FastPropNet" + (int)(Math.random() * 100000000) + "a" + (int)(Math.random() * 100000000);
 
         try {
             propNet = OptimizingPropNetFactory.create(description);
@@ -101,110 +101,148 @@ public class GladosCompiledPropNetStateMachine extends StateMachine {
         // build methods
         CtClass cc = pool.makeClass(className);
         cc.setSuperclass(pool.get("org.ggp.base.util.statemachine.implementation.glados.FastPropNet"));
-        cc.addMethod(CtNewMethod.make(buildPropagate(), cc));
-        cc.addMethod(CtNewMethod.make(buildNextState(), cc));
+
+        buildPropagate(cc);
+        buildNextState(cc);
 
         // instantiate
         fpn = (FastPropNet)cc.toClass().newInstance();
 
         // initialize
-        fpn.props = new boolean[ordering.size()];
-        fpn.inputProps = new boolean[numInputProps];
-        fpn.baseProps = new boolean[numBaseProps];
+        fpn.p = new boolean[ordering.size()];
+        fpn.n = new boolean[numInputProps];
+        fpn.b = new boolean[numBaseProps];
     }
 
-    private String buildPropagate() throws Exception {
+    private void buildPropagate(CtClass cc) throws Exception {
         StringBuilder sb = new StringBuilder();
-        sb.append("public void propagate(){");
-        //sb.append("baseProps = state;\n");
-        int pi = 0;
+        //sb.append("b = state;\n");
+        int pi = 0, num = 0;
+
         for(Proposition p : ordering) {
             if(p.getInputs().size() >= 1) {
 
-                sb.append("props[" + pi + "]=");
+                sb.append("p[" + pi + "]=");
 
                 Component c = p.getSingleInput();
                 sb.append(componentToString(c)); // guaranteed c is not a transition
 
                 sb.append(";");
             }
+            if(sb.toString().length() > 30000) {
+                StringBuilder newMethod = new StringBuilder();
+                newMethod.append("public void w");
+                newMethod.append(num++);
+                newMethod.append("(){");
+                newMethod.append(sb.toString());
+                newMethod.append("}");
+                cc.addMethod(CtNewMethod.make(newMethod.toString(), cc));
+                sb = new StringBuilder();
+            }
             pi++;
         }
+
+        StringBuilder newMethod = new StringBuilder();
+        newMethod.append("public void w");
+        newMethod.append(num++);
+        newMethod.append("(){");
+        newMethod.append(sb.toString());
+        newMethod.append("}");
+        cc.addMethod(CtNewMethod.make(newMethod.toString(), cc));
+
+        sb = new StringBuilder();
+
+        sb.append("public void propagate(){");
+        for(int i = 0; i < num; i++) {
+            sb.append("w" + i + "();");
+        }
         sb.append("}");
-        //System.out.println(sb);
-        //m.setBody(sb.toString());
-        return sb.toString();
+
+        cc.addMethod(CtNewMethod.make(sb.toString(), cc));
     }
 
     private String componentToString(Component c) throws Exception {
-        StringBuilder sb = new StringBuilder();
+        String str = "";
         boolean first = true;
         if(c instanceof Proposition) {
             Proposition cp = (Proposition)c;
             if(isBaseProposition(cp)) {
-                return "baseProps[" + baseNumber.get(cp) + "]";
+                return "b[" + baseNumber.get(cp) + "]";
             } else if(isInputProposition(cp)) {
-                return "inputProps[" + inputNumber.get(cp) + "]";
+                return "n[" + inputNumber.get(cp) + "]";
             } else {
-                return "props[" + orderNumber.get(cp) + "]";
+                return "p[" + orderNumber.get(cp) + "]";
             }
         } else if(c instanceof Constant) {
-            sb.append(c.getValue());
+            str += c.getValue();
         } else if(c instanceof And) {
-            sb.append("(");
+            str += "(";
             for(Component ci : c.getInputs()) {
                 if(!first) {
-                    sb.append("&&");
+                    str += "&&";
                 }
-                sb.append("(");
-                sb.append(componentToString(ci));
-                sb.append(")");
+                str += "(" + componentToString(ci) + ")";
                 first = false;
             }
-            sb.append(")");
+            str += ")";
         } else if(c instanceof Or) {
-            sb.append("(");
+            str += "(";
             for(Component ci : c.getInputs()) {
                 if(!first) {
-                    sb.append("||");
+                    str += "||";
                 }
-                sb.append("(");
-                sb.append(componentToString(ci));
-                sb.append(")");
+                str += "(" + componentToString(ci) + ")";
                 first = false;
             }
-            sb.append(")");
+            str += ")";
         } else if(c instanceof Not) {
             Component ci = c.getSingleInput();
-            sb.append("!");
-            sb.append("(");
-            sb.append(componentToString(ci));
-            sb.append(")");
+            str += "!(" + componentToString(ci) + ")";
         } else if(c instanceof Transition) { // should never get here from "propagate" because we are handling non-base propositions
             Component ci = c.getSingleInput();
-            sb.append("(");
-            sb.append(componentToString(ci));
-            sb.append(")");
+            str += "(" + componentToString(ci) + ")";
         }
-        return sb.toString();
+        return str;
     }
 
-    private String buildNextState() throws Exception {
+    private void buildNextState(CtClass cc) throws Exception {
         StringBuilder sb = new StringBuilder();
-        sb.append("public void nextState(){");
-        int pi = 0;
+        int pi = 0, num = 0;
         for(Proposition p : orderedBasePropositions) {
-            sb.append("baseProps[" + pi + "]=");
+            sb.append("b[" + pi + "]=");
             Component c = p.getSingleInput();
             sb.append(componentToString(c));
             sb.append(";");
+
+            if(sb.toString().length() > 30000) {
+                StringBuilder newMethod = new StringBuilder();
+                newMethod.append("public void q");
+                newMethod.append(num++);
+                newMethod.append("(){");
+                newMethod.append(sb.toString());
+                newMethod.append("}");
+                cc.addMethod(CtNewMethod.make(newMethod.toString(), cc));
+                sb = new StringBuilder();
+            }
             pi++;
         }
-        //sb.append("System.arraycopy(baseProps,0,state,0,state.length);");
-        sb.append("}");
 
-        //m.setBody(sb.toString());
-        return sb.toString();
+        StringBuilder newMethod = new StringBuilder();
+        newMethod.append("public void q");
+        newMethod.append(num++);
+        newMethod.append("(){");
+        newMethod.append(sb.toString());
+        newMethod.append("}");
+        cc.addMethod(CtNewMethod.make(newMethod.toString(), cc));
+
+        sb = new StringBuilder();
+
+        sb.append("public void nextState(){");
+        for(int i = 0; i < num; i++) {
+            sb.append("q" + i + "();");
+        }
+        sb.append("}");
+        cc.addMethod(CtNewMethod.make(sb.toString(), cc));
     }
 
     private boolean[] basePropBooleansFromState(MachineState state) {
@@ -238,7 +276,7 @@ public class GladosCompiledPropNetStateMachine extends StateMachine {
     public boolean isTerminal(MachineState state) {
         // Compute whether the MachineState is terminal.
         loadPropNet(state);
-        return fpn.props[orderNumber.get(propNet.getTerminalProposition())];
+        return fpn.p[orderNumber.get(propNet.getTerminalProposition())];
     }
 
     /**
@@ -254,7 +292,7 @@ public class GladosCompiledPropNetStateMachine extends StateMachine {
         loadPropNet(state);
         Set<Proposition> goalProps = propNet.getGoalPropositions().get(role);
         for(Proposition p : goalProps) {
-            if(fpn.props[orderNumber.get(p)]) {
+            if(fpn.p[orderNumber.get(p)]) {
                 return getGoalValue(p);
             }
         }
@@ -269,17 +307,17 @@ public class GladosCompiledPropNetStateMachine extends StateMachine {
     @Override
     public MachineState getInitialState() {
         // Compute the initial state.
-        fpn.props[orderNumber.get(propNet.getInitProposition())] = true;
+        fpn.p[orderNumber.get(propNet.getInitProposition())] = true;
         fpn.propagate();
         fpn.nextState();
-        /*System.out.println("fpn.baseProps :");
-        for(int i = 0; i < fpn.baseProps.length; i++) {
-            System.out.print(fpn.baseProps[i] ? 1 : 0);
+        /*System.out.println("fpn.b :");
+        for(int i = 0; i < fpn.b.length; i++) {
+            System.out.print(fpn.b[i] ? 1 : 0);
         }
         System.out.println();
         */
-        MachineState initState = stateFromBasePropBooleans(fpn.baseProps);
-        fpn.props[orderNumber.get(propNet.getInitProposition())] = false;
+        MachineState initState = stateFromBasePropBooleans(fpn.b);
+        fpn.p[orderNumber.get(propNet.getInitProposition())] = false;
         return initState;
     }
 
@@ -293,7 +331,7 @@ public class GladosCompiledPropNetStateMachine extends StateMachine {
         Set<Proposition> legalProps = propNet.getLegalPropositions().get(role);
         ArrayList<Move> al = new ArrayList<Move>();
         for(Proposition p : legalProps) {
-            if(fpn.props[orderNumber.get(p)]) {
+            if(fpn.p[orderNumber.get(p)]) {
                 al.add(getMoveFromProposition(p));
             }
         }
@@ -324,7 +362,7 @@ public class GladosCompiledPropNetStateMachine extends StateMachine {
         fpn.setMoves(moveBools);
 
         boolean[] stateBools = basePropBooleansFromState(state);
-        fpn.baseProps = stateBools;
+        fpn.b = stateBools;
         fpn.propagate();
         fpn.nextState();
 
@@ -398,7 +436,7 @@ public class GladosCompiledPropNetStateMachine extends StateMachine {
     }
 
     private void loadPropNet(MachineState state) {
-        fpn.baseProps = basePropBooleansFromState(state);
+        fpn.b = basePropBooleansFromState(state);
         fpn.propagate();
     }
 

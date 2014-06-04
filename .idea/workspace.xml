@@ -2,26 +2,72 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8d760366-d5ac-4bb2-aa8c-a4e4bb42b0c0" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/compiled/FastPropNet.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/javassist24.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/org/ggp/base/util/statemachine/implementation/glados/FastPropNet.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/org/ggp/base/util/statemachine/implementation/glados/GladosCompiledPropNetStateMachine.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/org/ggp/base/player/gamer/statemachine/sample/MySpeedTester.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/org/ggp/base/player/gamer/statemachine/sample/SampleMonteCarloGamer2.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/javassist24.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/compiled/propnet333968990.c" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/compiled/propnet333968990.out" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/compiled/propnet348817098.c" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/compiled/propnet348817098.out" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/compiled/propnet7265551.c" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/compiled/propnet7265551.out" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/compiled/propnet808153324.c" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/compiled/propnet808153324.out" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/GGP_Base.iml" afterPath="$PROJECT_DIR$/GGP_Base.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/ggp/base/player/gamer/statemachine/glados/GladosGamer.java" afterPath="$PROJECT_DIR$/src/org/ggp/base/player/gamer/statemachine/glados/GladosGamer.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/ggp/base/util/statemachine/implementation/glados/GladosPropNetStateMachine.java" afterPath="$PROJECT_DIR$/src/org/ggp/base/util/statemachine/implementation/glados/GladosPropNetStateMachine.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/ggp/base/player/gamer/statemachine/sample/MyPropnetTester.java" afterPath="$PROJECT_DIR$/src/org/ggp/base/player/gamer/statemachine/sample/MyPropnetTester.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/ggp/base/player/gamer/statemachine/sample/SampleGamer.java" afterPath="$PROJECT_DIR$/src/org/ggp/base/player/gamer/statemachine/sample/SampleGamer.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/decomp_code/ConfigurablePlayer/a.class" afterPath="$PROJECT_DIR$/decomp_code/ConfigurablePlayer/a.class" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/decomp_code/ConfigurablePlayer/aa.class" afterPath="$PROJECT_DIR$/decomp_code/ConfigurablePlayer/aa.class" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/decomp_code/ConfigurablePlayer/ab.class" afterPath="$PROJECT_DIR$/decomp_code/ConfigurablePlayer/ab.class" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/decomp_code/ConfigurablePlayer/ac.class" afterPath="$PROJECT_DIR$/decomp_code/ConfigurablePlayer/ac.class" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/decomp_code/ConfigurablePlayer/ad.class" afterPath="$PROJECT_DIR$/decomp_code/ConfigurablePlayer/ad.class" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/decomp_code/ConfigurablePlayer/ae.class" afterPath="$PROJECT_DIR$/decomp_code/ConfigurablePlayer/ae.class" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/decomp_code/ConfigurablePlayer/af.class" afterPath="$PROJECT_DIR$/decomp_code/ConfigurablePlayer/af.class" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/decomp_code/ConfigurablePlayer/ag.class" afterPath="$PROJECT_DIR$/decomp_code/ConfigurablePlayer/ag.class" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/decomp_code/ConfigurablePlayer/ah.class" afterPath="$PROJECT_DIR$/decomp_code/ConfigurablePlayer/ah.class" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/decomp_code/ConfigurablePlayer/ai.class" afterPath="$PROJECT_DIR$/decomp_code/ConfigurablePlayer/ai.class" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/decomp_code/ConfigurablePlayer/aj.class" afterPath="$PROJECT_DIR$/decomp_code/ConfigurablePlayer/aj.class" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/decomp_code/ConfigurablePlayer/ak.class" afterPath="$PROJECT_DIR$/decomp_code/ConfigurablePlayer/ak.class" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/decomp_code/ConfigurablePlayer/al.class" afterPath="$PROJECT_DIR$/decomp_code/ConfigurablePlayer/al.class" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/decomp_code/ConfigurablePlayer/am.class" afterPath="$PROJECT_DIR$/decomp_code/ConfigurablePlayer/am.class" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/decomp_code/ConfigurablePlayer/an.class" afterPath="$PROJECT_DIR$/decomp_code/ConfigurablePlayer/an.class" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/decomp_code/ConfigurablePlayer/ao.class" afterPath="$PROJECT_DIR$/decomp_code/ConfigurablePlayer/ao.class" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/decomp_code/ConfigurablePlayer/ap.class" afterPath="$PROJECT_DIR$/decomp_code/ConfigurablePlayer/ap.class" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/decomp_code/ConfigurablePlayer/aq.class" afterPath="$PROJECT_DIR$/decomp_code/ConfigurablePlayer/aq.class" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/decomp_code/ConfigurablePlayer/ar.class" afterPath="$PROJECT_DIR$/decomp_code/ConfigurablePlayer/ar.class" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/decomp_code/ConfigurablePlayer/as.class" afterPath="$PROJECT_DIR$/decomp_code/ConfigurablePlayer/as.class" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/decomp_code/ConfigurablePlayer/at.class" afterPath="$PROJECT_DIR$/decomp_code/ConfigurablePlayer/at.class" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/decomp_code/ConfigurablePlayer/au.class" afterPath="$PROJECT_DIR$/decomp_code/ConfigurablePlayer/au.class" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/decomp_code/ConfigurablePlayer/av.class" afterPath="$PROJECT_DIR$/decomp_code/ConfigurablePlayer/av.class" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/decomp_code/ConfigurablePlayer/aw.class" afterPath="$PROJECT_DIR$/decomp_code/ConfigurablePlayer/aw.class" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/decomp_code/ConfigurablePlayer/ax.class" afterPath="$PROJECT_DIR$/decomp_code/ConfigurablePlayer/ax.class" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/decomp_code/ConfigurablePlayer/ay.class" afterPath="$PROJECT_DIR$/decomp_code/ConfigurablePlayer/ay.class" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/decomp_code/ConfigurablePlayer/az.class" afterPath="$PROJECT_DIR$/decomp_code/ConfigurablePlayer/az.class" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/decomp_code/ConfigurablePlayer/b.class" afterPath="$PROJECT_DIR$/decomp_code/ConfigurablePlayer/b.class" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/decomp_code/ConfigurablePlayer/ba.class" afterPath="$PROJECT_DIR$/decomp_code/ConfigurablePlayer/ba.class" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/decomp_code/ConfigurablePlayer/bb.class" afterPath="$PROJECT_DIR$/decomp_code/ConfigurablePlayer/bb.class" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/decomp_code/ConfigurablePlayer/bc.class" afterPath="$PROJECT_DIR$/decomp_code/ConfigurablePlayer/bc.class" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/decomp_code/ConfigurablePlayer/bd.class" afterPath="$PROJECT_DIR$/decomp_code/ConfigurablePlayer/bd.class" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/decomp_code/ConfigurablePlayer/be.class" afterPath="$PROJECT_DIR$/decomp_code/ConfigurablePlayer/be.class" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/decomp_code/ConfigurablePlayer/bf.class" afterPath="$PROJECT_DIR$/decomp_code/ConfigurablePlayer/bf.class" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/decomp_code/ConfigurablePlayer/bg.class" afterPath="$PROJECT_DIR$/decomp_code/ConfigurablePlayer/bg.class" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/decomp_code/ConfigurablePlayer/bh.class" afterPath="$PROJECT_DIR$/decomp_code/ConfigurablePlayer/bh.class" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/decomp_code/ConfigurablePlayer/bi.class" afterPath="$PROJECT_DIR$/decomp_code/ConfigurablePlayer/bi.class" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/decomp_code/ConfigurablePlayer/bj.class" afterPath="$PROJECT_DIR$/decomp_code/ConfigurablePlayer/bj.class" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/decomp_code/ConfigurablePlayer/c.class" afterPath="$PROJECT_DIR$/decomp_code/ConfigurablePlayer/c.class" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/decomp_code/ConfigurablePlayer/d.class" afterPath="$PROJECT_DIR$/decomp_code/ConfigurablePlayer/d.class" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/decomp_code/ConfigurablePlayer/e.class" afterPath="$PROJECT_DIR$/decomp_code/ConfigurablePlayer/e.class" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/decomp_code/ConfigurablePlayer/f.class" afterPath="$PROJECT_DIR$/decomp_code/ConfigurablePlayer/f.class" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/decomp_code/ConfigurablePlayer/g.class" afterPath="$PROJECT_DIR$/decomp_code/ConfigurablePlayer/g.class" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/decomp_code/ConfigurablePlayer/h.class" afterPath="$PROJECT_DIR$/decomp_code/ConfigurablePlayer/h.class" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/decomp_code/ConfigurablePlayer/i.class" afterPath="$PROJECT_DIR$/decomp_code/ConfigurablePlayer/i.class" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/decomp_code/ConfigurablePlayer/j.class" afterPath="$PROJECT_DIR$/decomp_code/ConfigurablePlayer/j.class" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/decomp_code/ConfigurablePlayer/k.class" afterPath="$PROJECT_DIR$/decomp_code/ConfigurablePlayer/k.class" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/decomp_code/ConfigurablePlayer/l.class" afterPath="$PROJECT_DIR$/decomp_code/ConfigurablePlayer/l.class" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/decomp_code/ConfigurablePlayer/m.class" afterPath="$PROJECT_DIR$/decomp_code/ConfigurablePlayer/m.class" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/decomp_code/ConfigurablePlayer/n.class" afterPath="$PROJECT_DIR$/decomp_code/ConfigurablePlayer/n.class" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/decomp_code/ConfigurablePlayer/o.class" afterPath="$PROJECT_DIR$/decomp_code/ConfigurablePlayer/o.class" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/decomp_code/ConfigurablePlayer/p.class" afterPath="$PROJECT_DIR$/decomp_code/ConfigurablePlayer/p.class" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/decomp_code/ConfigurablePlayer/q.class" afterPath="$PROJECT_DIR$/decomp_code/ConfigurablePlayer/q.class" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/decomp_code/ConfigurablePlayer/r.class" afterPath="$PROJECT_DIR$/decomp_code/ConfigurablePlayer/r.class" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/decomp_code/ConfigurablePlayer/s.class" afterPath="$PROJECT_DIR$/decomp_code/ConfigurablePlayer/s.class" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/decomp_code/ConfigurablePlayer/t.class" afterPath="$PROJECT_DIR$/decomp_code/ConfigurablePlayer/t.class" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/decomp_code/ConfigurablePlayer/u.class" afterPath="$PROJECT_DIR$/decomp_code/ConfigurablePlayer/u.class" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/decomp_code/ConfigurablePlayer/v.class" afterPath="$PROJECT_DIR$/decomp_code/ConfigurablePlayer/v.class" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/decomp_code/ConfigurablePlayer/w.class" afterPath="$PROJECT_DIR$/decomp_code/ConfigurablePlayer/w.class" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/decomp_code/ConfigurablePlayer/x.class" afterPath="$PROJECT_DIR$/decomp_code/ConfigurablePlayer/x.class" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/decomp_code/ConfigurablePlayer/y.class" afterPath="$PROJECT_DIR$/decomp_code/ConfigurablePlayer/y.class" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/decomp_code/ConfigurablePlayer/z.class" afterPath="$PROJECT_DIR$/decomp_code/ConfigurablePlayer/z.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/ggp/base/util/statemachine/implementation/glados/FastPropNet.java" afterPath="$PROJECT_DIR$/src/org/ggp/base/util/statemachine/implementation/glados/FastPropNet.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/ggp/base/util/statemachine/implementation/glados/GladosCompiledPropNetStateMachine.java" afterPath="$PROJECT_DIR$/src/org/ggp/base/util/statemachine/implementation/glados/GladosCompiledPropNetStateMachine.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/ggp/base/util/propnet/architecture/PropNet.java" afterPath="$PROJECT_DIR$/src/org/ggp/base/util/propnet/architecture/PropNet.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/ggp/base/util/propnet/factory/annotater/PropNetAnnotater.java" afterPath="$PROJECT_DIR$/src/org/ggp/base/util/propnet/factory/annotater/PropNetAnnotater.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="ggp-base.iws" />
@@ -91,7 +137,7 @@
           <file leaf-file-name="GladosGamer.java" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/org/ggp/base/player/gamer/statemachine/glados/GladosGamer.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="495" column="70" selection-start="21333" selection-end="21333" vertical-scroll-proportion="0.0" vertical-offset="7248" max-vertical-offset="10880">
+                <state line="196" column="33" selection-start="7919" selection-end="7919" vertical-scroll-proportion="0.0" vertical-offset="2982" max-vertical-offset="10999">
                   <folding />
                 </state>
               </provider>
@@ -100,7 +146,7 @@
           <file leaf-file-name="SampleGamer.java" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/org/ggp/base/player/gamer/statemachine/sample/SampleGamer.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="42" column="43" selection-start="1715" selection-end="1875" vertical-scroll-proportion="0.0" vertical-offset="408" max-vertical-offset="1139">
+                <state line="42" column="43" selection-start="1715" selection-end="1875" vertical-scroll-proportion="0.0" vertical-offset="714" max-vertical-offset="1309">
                   <folding />
                 </state>
               </provider>
@@ -109,42 +155,7 @@
           <file leaf-file-name="SampleMonteCarloGamer2.java" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/org/ggp/base/player/gamer/statemachine/sample/SampleMonteCarloGamer2.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="88" column="37" selection-start="3679" selection-end="3679" vertical-scroll-proportion="0.0" vertical-offset="941" max-vertical-offset="1598">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="PropNetConverter.java" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/org/ggp/base/util/propnet/factory/converter/PropNetConverter.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="166" column="38" selection-start="4957" selection-end="4957" vertical-scroll-proportion="0.0" vertical-offset="2295" max-vertical-offset="5253">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="GladosPropNetStateMachine.java" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/org/ggp/base/util/statemachine/implementation/glados/GladosPropNetStateMachine.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="95" column="32" selection-start="3546" selection-end="3546" vertical-scroll-proportion="-13.076923" vertical-offset="969" max-vertical-offset="5083">
-                  <folding>
-                    <element signature="e#4030#4036#0" expanded="true" />
-                    <element signature="e#5442#5455#0" expanded="true" />
-                    <element signature="e#5790#5801#0" expanded="true" />
-                    <element signature="e#8532#8533#0" expanded="true" />
-                    <element signature="e#8560#8561#0" expanded="true" />
-                    <element signature="e#9186#9199#0" expanded="true" />
-                    <element signature="e#10552#10565#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="GamePlayer.java" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/org/ggp/base/player/GamePlayer.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="89" column="0" selection-start="2405" selection-end="2405" vertical-scroll-proportion="0.0" vertical-offset="916" max-vertical-offset="1870">
+                <state line="88" column="37" selection-start="3679" selection-end="3679" vertical-scroll-proportion="0.0" vertical-offset="1496" max-vertical-offset="1768">
                   <folding />
                 </state>
               </provider>
@@ -153,30 +164,53 @@
           <file leaf-file-name="MyPropnetTester.java" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/org/ggp/base/player/gamer/statemachine/sample/MyPropnetTester.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="34" column="65" selection-start="1566" selection-end="1566" vertical-scroll-proportion="0.0" vertical-offset="255" max-vertical-offset="3094">
+                <state line="34" column="65" selection-start="1566" selection-end="1566" vertical-scroll-proportion="0.0" vertical-offset="51" max-vertical-offset="2890">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="GladosCompiledPropNetStateMachine.java" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/org/ggp/base/util/statemachine/implementation/glados/GladosCompiledPropNetStateMachine.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="170" column="52" selection-start="6103" selection-end="6103" vertical-scroll-proportion="-17.0" vertical-offset="2448" max-vertical-offset="8857">
                   <folding>
                     <element signature="imports" expanded="true" />
+                    <element signature="e#9244#9257#0" expanded="true" />
+                    <element signature="e#11727#11733#0" expanded="true" />
+                    <element signature="e#12029#12042#0" expanded="true" />
+                    <element signature="e#13753#13766#0" expanded="true" />
+                    <element signature="e#14101#14112#0" expanded="true" />
+                    <element signature="e#16264#16277#0" expanded="true" />
+                    <element signature="e#17630#17643#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="GladosCompiledPropNetStateMachine.java" pinned="false" current="true" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/org/ggp/base/util/statemachine/implementation/glados/GladosCompiledPropNetStateMachine.java">
+          <file leaf-file-name="StateMachine.java" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/org/ggp/base/util/statemachine/StateMachine.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="54" column="29" selection-start="2141" selection-end="2141" vertical-scroll-proportion="0.62637365" vertical-offset="576" max-vertical-offset="8245">
-                  <folding>
-                    <element signature="imports" expanded="true" />
-                    <element signature="e#7934#7947#0" expanded="true" />
-                    <element signature="e#10465#10471#0" expanded="true" />
-                    <element signature="e#10771#10784#0" expanded="true" />
-                    <element signature="e#12503#12516#0" expanded="true" />
-                    <element signature="e#12851#12862#0" expanded="true" />
-                    <element signature="e#14368#14369#0" expanded="true" />
-                    <element signature="e#14396#14397#0" expanded="true" />
-                    <element signature="e#15022#15035#0" expanded="true" />
-                    <element signature="e#16388#16401#0" expanded="true" />
-                  </folding>
+                <state line="35" column="25" selection-start="1212" selection-end="1212" vertical-scroll-proportion="0.0" vertical-offset="166" max-vertical-offset="6579">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="WilburCopy.java" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/org/ggp/base/player/gamer/statemachine/glados/WilburCopy.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="26" column="13" selection-start="1105" selection-end="1105" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="10710">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="ShinGladosGamer.java" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/org/ggp/base/player/gamer/statemachine/glados/ShinGladosGamer.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="99" column="61" selection-start="3216" selection-end="3216" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="4488">
+                  <folding />
                 </state>
               </provider>
             </entry>
@@ -184,20 +218,17 @@
           <file leaf-file-name="MySpeedTester.java" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/org/ggp/base/player/gamer/statemachine/sample/MySpeedTester.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="26" column="86" selection-start="1129" selection-end="1129" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1224">
+                <state line="26" column="86" selection-start="1129" selection-end="1129" vertical-scroll-proportion="0.0" vertical-offset="442" max-vertical-offset="1394">
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="FastPropNet.java" pinned="false" current="false" current-in-tab="false">
+          <file leaf-file-name="FastPropNet.java" pinned="false" current="true" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/org/ggp/base/util/statemachine/implementation/glados/FastPropNet.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="5" column="53" selection-start="203" selection-end="203" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="493">
-                  <folding>
-                    <element signature="e#465#466#0" expanded="true" />
-                    <element signature="e#499#500#0" expanded="true" />
-                  </folding>
+                <state line="18" column="86" selection-start="485" selection-end="485" vertical-scroll-proportion="0.4641638" vertical-offset="0" max-vertical-offset="586">
+                  <folding />
                 </state>
               </provider>
             </entry>
@@ -209,7 +240,7 @@
           <file leaf-file-name="ProverStateMachine.java" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/org/ggp/base/util/statemachine/implementation/prover/ProverStateMachine.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="29" column="49" selection-start="1199" selection-end="1199" vertical-scroll-proportion="0.0" vertical-offset="918" max-vertical-offset="1802">
+                <state line="29" column="49" selection-start="1199" selection-end="1199" vertical-scroll-proportion="0.0" vertical-offset="493" max-vertical-offset="2227">
                   <folding />
                 </state>
               </provider>
@@ -218,7 +249,7 @@
           <file leaf-file-name="Proposition.java" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/org/ggp/base/util/propnet/architecture/components/Proposition.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="4" column="25" selection-start="167" selection-end="167" vertical-scroll-proportion="0.0" vertical-offset="749" max-vertical-offset="1258">
+                <state line="4" column="25" selection-start="167" selection-end="167" vertical-scroll-proportion="0.0" vertical-offset="68" max-vertical-offset="1479">
                   <folding />
                 </state>
               </provider>
@@ -236,7 +267,7 @@
           <file leaf-file-name="PropNet.java" pinned="false" current="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/org/ggp/base/util/propnet/architecture/PropNet.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="276" column="52" selection-start="8837" selection-end="8837" vertical-scroll-proportion="0.45787546" vertical-offset="3796" max-vertical-offset="8602">
+                <state line="245" column="52" selection-start="7834" selection-end="7834" vertical-scroll-proportion="0.64351004" vertical-offset="3167" max-vertical-offset="8602">
                   <folding />
                 </state>
               </provider>
@@ -245,7 +276,7 @@
           <file leaf-file-name="OptimizingPropNetFactory.java" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/org/ggp/base/util/propnet/factory/OptimizingPropNetFactory.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="106" column="52" selection-start="5276" selection-end="5276" vertical-scroll-proportion="0.0" vertical-offset="5328" max-vertical-offset="25109">
+                <state line="106" column="52" selection-start="5276" selection-end="5276" vertical-scroll-proportion="0.0" vertical-offset="1802" max-vertical-offset="26146">
                   <folding />
                 </state>
               </provider>
@@ -271,17 +302,17 @@
         <option value="$PROJECT_DIR$/propnet_visualization.dot" />
         <option value="$PROJECT_DIR$/src/org/ggp/base/util/statemachine/implementation/prover/ProverStateMachine.java" />
         <option value="$PROJECT_DIR$/src/org/ggp/base/player/gamer/statemachine/sample/SampleMonteCarloGamer.java" />
-        <option value="$PROJECT_DIR$/src/org/ggp/base/util/propnet/architecture/PropNet.java" />
         <option value="$PROJECT_DIR$/src/org/ggp/base/compiled/Propnet2082789.java" />
         <option value="$PROJECT_DIR$/src/org/ggp/base/util/statemachine/implementation/glados/GladosPropNetStateMachine.java" />
         <option value="$PROJECT_DIR$/src/org/ggp/base/player/gamer/statemachine/sample/MyPropnetTester.java" />
         <option value="$PROJECT_DIR$/src/FastPropNet.java" />
         <option value="$PROJECT_DIR$/src/org/ggp/base/FastPropNet.java" />
-        <option value="$PROJECT_DIR$/src/org/ggp/base/util/statemachine/implementation/glados/FastPropNet.java" />
         <option value="$PROJECT_DIR$/src/org/ggp/base/player/gamer/statemachine/sample/MySpeedTester.java" />
         <option value="$PROJECT_DIR$/src/org/ggp/base/player/gamer/statemachine/sample/SampleGamer.java" />
         <option value="$PROJECT_DIR$/src/org/ggp/base/player/gamer/statemachine/sample/SampleMonteCarloGamer2.java" />
         <option value="$PROJECT_DIR$/src/org/ggp/base/player/gamer/statemachine/glados/GladosGamer.java" />
+        <option value="$PROJECT_DIR$/src/org/ggp/base/util/statemachine/implementation/glados/FastPropNet.java" />
+        <option value="$PROJECT_DIR$/src/org/ggp/base/util/propnet/architecture/PropNet.java" />
         <option value="$PROJECT_DIR$/src/org/ggp/base/util/statemachine/implementation/glados/GladosCompiledPropNetStateMachine.java" />
       </list>
     </option>
@@ -374,20 +405,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="PackagesPane">
-        <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ggp-base" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="GGP_Base" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -1150,6 +1167,20 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="PackagesPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ggp-base" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GGP_Base" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
       <pane id="Scope" />
     </panes>
   </component>
@@ -1170,7 +1201,7 @@
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="dynamic.classpath" value="false" />
-    <property name="SearchEverywhereHistory" value="&#10;]&#10;int" />
+    <property name="SearchEverywhereHistory" value="&quot;&#10;]&#10;int" />
     <property name="OverrideImplement.combined" value="true" />
     <property name="OverrideImplement.overriding.sorted" value="false" />
     <property name="last_opened_file_path" value="$USER_HOME$/IdeaProjects/CS161Idea" />
@@ -1255,6 +1286,19 @@
       <option name="PORT" value="5005" />
       <method />
     </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method />
+    </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
       <module name="" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
@@ -1280,19 +1324,6 @@
       <envs />
       <properties />
       <listeners />
-      <method />
-    </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
       <method />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -1436,11 +1467,11 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.14962727" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3174946" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.31641468" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -1464,20 +1495,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/org/ggp/base/player/gamer/statemachine/sample/SampleLegalGamer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="56" selection-start="1191" selection-end="1191" vertical-scroll-proportion="0.0" vertical-offset="561" max-vertical-offset="1071">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/ggp/base/apps/player/Player.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="40" selection-start="33" selection-end="33" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2958">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/org/ggp/base/validator/StaticValidator.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="242" column="163" selection-start="10497" selection-end="10497" vertical-scroll-proportion="0.0" vertical-offset="4114" max-vertical-offset="10710" />
@@ -1510,11 +1527,6 @@
         <state line="290" column="45" selection-start="14386" selection-end="14386" vertical-scroll-proportion="5.1693406" vertical-offset="4930" max-vertical-offset="8235">
           <folding />
         </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/ggp/base/util/statemachine/StateMachine.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="148" column="60" selection-start="6293" selection-end="6293" vertical-scroll-proportion="0.08906426" vertical-offset="3137" max-vertical-offset="9288" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/org/ggp/base/apps/player/Player.java">
@@ -1554,9 +1566,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/org/ggp/base/util/prover/Prover.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="22" selection-start="131" selection-end="131" vertical-scroll-proportion="0.075555556" vertical-offset="0" max-vertical-offset="900">
-          <folding />
-        </state>
+        <state line="6" column="22" selection-start="131" selection-end="131" vertical-scroll-proportion="0.075555556" vertical-offset="0" max-vertical-offset="900" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/org/ggp/base/util/statemachine/MachineState.java">
@@ -1589,9 +1599,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/propnet_visualization.dot">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2576" column="66" selection-start="293487" selection-end="293487" vertical-scroll-proportion="0.0" vertical-offset="43635" max-vertical-offset="44455">
-          <folding />
-        </state>
+        <state line="2576" column="66" selection-start="293487" selection-end="293487" vertical-scroll-proportion="0.0" vertical-offset="43635" max-vertical-offset="44455" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/org/ggp/base/util/prover/aima/AimaProver.java">
@@ -1624,9 +1632,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src_clj/sample_gamer.clj">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="28" selection-start="510" selection-end="510" vertical-scroll-proportion="0.37678573" vertical-offset="27" max-vertical-offset="612">
-          <folding />
-        </state>
+        <state line="14" column="28" selection-start="510" selection-end="510" vertical-scroll-proportion="0.37678573" vertical-offset="27" max-vertical-offset="612" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/org/ggp/base/player/gamer/statemachine/StateMachineGamer.java">
@@ -1690,9 +1696,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/cleanup.sh">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="509">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="509" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/org/ggp/base/util/propnet/architecture/components/Or.java">
@@ -1704,27 +1708,12 @@
     </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.7.0_25/src.zip!/java/lang/Class.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="358" column="0" selection-start="13888" selection-end="13888" vertical-scroll-proportion="0.0" vertical-offset="4735" max-vertical-offset="53159">
-          <folding />
-        </state>
+        <state line="358" column="0" selection-start="13888" selection-end="13888" vertical-scroll-proportion="0.0" vertical-offset="4735" max-vertical-offset="53159" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/org/ggp/base/util/statemachine/implementation/prover/query/ProverQueryBuilder.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="75" column="30" selection-start="2488" selection-end="2488" vertical-scroll-proportion="0.0" vertical-offset="482" max-vertical-offset="1054">
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#1733#1746#0" expanded="false" />
-            <element signature="e#2073#2074#0" expanded="false" />
-            <element signature="e#2097#2098#0" expanded="false" />
-            <element signature="e#2283#2284#0" expanded="false" />
-            <element signature="e#2307#2308#0" expanded="false" />
-            <element signature="e#2353#2354#0" expanded="false" />
-            <element signature="e#2377#2378#0" expanded="false" />
-            <element signature="e#2430#2431#0" expanded="false" />
-            <element signature="e#2458#2459#0" expanded="false" />
-          </folding>
-        </state>
+        <state line="75" column="30" selection-start="2488" selection-end="2488" vertical-scroll-proportion="0.0" vertical-offset="482" max-vertical-offset="1054" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/org/ggp/base/player/GamePlayer.java">
@@ -1741,35 +1730,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/ggp/base/util/propnet/architecture/PropNet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="276" column="52" selection-start="8837" selection-end="8837" vertical-scroll-proportion="0.45787546" vertical-offset="3796" max-vertical-offset="8602">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/org/ggp/base/util/statemachine/implementation/glados/GladosPropNetStateMachine.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="95" column="32" selection-start="3546" selection-end="3546" vertical-scroll-proportion="-13.076923" vertical-offset="969" max-vertical-offset="5083">
-          <folding>
-            <element signature="e#4030#4036#0" expanded="true" />
-            <element signature="e#5442#5455#0" expanded="true" />
-            <element signature="e#5790#5801#0" expanded="true" />
-            <element signature="e#8532#8533#0" expanded="true" />
-            <element signature="e#8560#8561#0" expanded="true" />
-            <element signature="e#9186#9199#0" expanded="true" />
-            <element signature="e#10552#10565#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/ggp/base/util/statemachine/implementation/glados/FastPropNet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="53" selection-start="203" selection-end="203" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="493">
-          <folding>
-            <element signature="e#465#466#0" expanded="true" />
-            <element signature="e#499#500#0" expanded="true" />
-          </folding>
+        <state line="95" column="32" selection-start="3546" selection-end="3546" vertical-scroll-proportion="0.0" vertical-offset="1615" max-vertical-offset="5389">
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1782,9 +1746,7 @@
     </entry>
     <entry file="jar://$PROJECT_DIR$/src/external/javassist/javassist.jar!/javassist/ClassPool.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="130" column="0" selection-start="6812" selection-end="6812" vertical-scroll-proportion="0.8592322" vertical-offset="1723" max-vertical-offset="2295">
-          <folding />
-        </state>
+        <state line="130" column="0" selection-start="6812" selection-end="6812" vertical-scroll-proportion="0.8592322" vertical-offset="1723" max-vertical-offset="2295" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/org/ggp/base/player/gamer/statemachine/sample/SampleLegalGamer.java">
@@ -1808,22 +1770,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/ggp/base/player/gamer/statemachine/glados/GladosGamer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="495" column="70" selection-start="21333" selection-end="21333" vertical-scroll-proportion="0.0" vertical-offset="7248" max-vertical-offset="10880">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/ggp/base/player/gamer/statemachine/sample/MyPropnetTester.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="65" selection-start="1566" selection-end="1566" vertical-scroll-proportion="0.0" vertical-offset="255" max-vertical-offset="3094">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/org/ggp/base/player/gamer/statemachine/sample/MySpeedTester.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="26" column="86" selection-start="1129" selection-end="1129" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1224">
@@ -1831,21 +1777,68 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/ggp/base/player/gamer/statemachine/glados/WilburCopy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="26" column="13" selection-start="1105" selection-end="1105" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="10710">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/ggp/base/player/gamer/statemachine/glados/GladosGamer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="196" column="33" selection-start="7919" selection-end="7919" vertical-scroll-proportion="0.0" vertical-offset="2982" max-vertical-offset="10999">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/ggp/base/util/propnet/architecture/PropNet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="245" column="52" selection-start="7834" selection-end="7834" vertical-scroll-proportion="0.64351004" vertical-offset="3167" max-vertical-offset="8602">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/ggp/base/util/statemachine/StateMachine.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="35" column="25" selection-start="1212" selection-end="1212" vertical-scroll-proportion="0.0" vertical-offset="166" max-vertical-offset="6579">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/ggp/base/player/gamer/statemachine/sample/MyPropnetTester.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="34" column="65" selection-start="1566" selection-end="1566" vertical-scroll-proportion="0.0" vertical-offset="255" max-vertical-offset="3094">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/org/ggp/base/util/statemachine/implementation/glados/GladosCompiledPropNetStateMachine.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="54" column="29" selection-start="2141" selection-end="2141" vertical-scroll-proportion="0.62637365" vertical-offset="576" max-vertical-offset="8245">
+        <state line="170" column="52" selection-start="6103" selection-end="6103" vertical-scroll-proportion="-17.0" vertical-offset="2448" max-vertical-offset="8857">
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#7934#7947#0" expanded="true" />
-            <element signature="e#10465#10471#0" expanded="true" />
-            <element signature="e#10771#10784#0" expanded="true" />
-            <element signature="e#12503#12516#0" expanded="true" />
-            <element signature="e#12851#12862#0" expanded="true" />
-            <element signature="e#14368#14369#0" expanded="true" />
-            <element signature="e#14396#14397#0" expanded="true" />
-            <element signature="e#15022#15035#0" expanded="true" />
-            <element signature="e#16388#16401#0" expanded="true" />
+            <element signature="e#9244#9257#0" expanded="true" />
+            <element signature="e#11727#11733#0" expanded="true" />
+            <element signature="e#12029#12042#0" expanded="true" />
+            <element signature="e#13753#13766#0" expanded="true" />
+            <element signature="e#14101#14112#0" expanded="true" />
+            <element signature="e#16264#16277#0" expanded="true" />
+            <element signature="e#17630#17643#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/ggp/base/player/gamer/statemachine/glados/ShinGladosGamer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="99" column="61" selection-start="3216" selection-end="3216" vertical-scroll-proportion="0.0" vertical-offset="1841" max-vertical-offset="4488">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/ggp/base/util/statemachine/implementation/glados/FastPropNet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="86" selection-start="485" selection-end="485" vertical-scroll-proportion="0.4641638" vertical-offset="0" max-vertical-offset="586">
+          <folding />
         </state>
       </provider>
     </entry>
