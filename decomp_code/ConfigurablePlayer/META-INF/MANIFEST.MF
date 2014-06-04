@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Ant-Version: Apache Ant 1.8.2
+Created-By: 1.7.0_25-b30 (Oracle Corporation)
+Main-Class: org.eclipse.jdt.internal.jarinjarloader.JarRsrcLoader
+Rsrc-Main-Class: org.ggp.base.player.ConfigurablePlayerRaw
+Rsrc-Class-Path: ./ core-renderer.jar Tidy.jar forms-1.2.1.jar jython.
+ jar clojure.jar junit.jar org.hamcrest.core_1.1.0.jar jcommon-1.0.17.
+ jar jfreechart-1.0.14.jar guava-14.0.1.jar
+Class-Path: .
+

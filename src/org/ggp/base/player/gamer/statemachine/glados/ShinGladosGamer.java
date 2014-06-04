@@ -5,6 +5,8 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Random;
 
+import org.ggp.base.apps.player.detail.DetailPanel;
+import org.ggp.base.apps.player.detail.SimpleDetailPanel;
 import org.ggp.base.player.gamer.event.GamerSelectedMoveEvent;
 import org.ggp.base.player.gamer.exception.GamePreviewException;
 import org.ggp.base.player.gamer.statemachine.StateMachineGamer;
@@ -115,7 +117,6 @@ public class ShinGladosGamer extends StateMachineGamer {
 		MCTSNodeSP newnode = new MCTSNodeSP(node, newstate, index);
 		MachineStateMapSP.put(newnode.state, newnode);
 		node.children.add(newnode);
-		System.out.println("YAAAAAH");
 		return newnode;
 	}
 
@@ -130,12 +131,10 @@ public class ShinGladosGamer extends StateMachineGamer {
             }
             currnode = MachineStateMapSP.get(getCurrentState());
 			while (currnode.isExpanded() && !currnode.isTerminal()) {
-				System.out.println("HEREINFLOOP");
 				currnode = selectionSP(currnode);
 			}
 			currnode = selectionSP(currnode);
 			updateScores(currnode);
-			System.out.println(timeout - System.currentTimeMillis());
 		}
 	}
 
@@ -203,8 +202,8 @@ public class ShinGladosGamer extends StateMachineGamer {
         	MCTSNodeSP currnode = MachineStateMapSP.get(getCurrentState());
         	return moves.get(currnode.getBestIndex());
         } else {
-        	int[] moveTotalPoints = new int[moves.size()];
-    		int[] moveTotalAttempts = new int[moves.size()];
+        	long[] moveTotalPoints = new long[moves.size()];
+    		long[] moveTotalAttempts = new long[moves.size()];
 
     		// Perform depth charges for each candidate move, and keep track
     		// of the total score and total attempts accumulated for each move.
@@ -216,7 +215,6 @@ public class ShinGladosGamer extends StateMachineGamer {
     		    moveTotalPoints[i] += theScore;
     		    moveTotalAttempts[i] += 1;
     		}
-
     		// Compute the expected score for each move.
     		double[] moveExpectedPoints = new double[moves.size()];
     		for (int i = 0; i < moves.size(); i++) {
@@ -255,6 +253,11 @@ public class ShinGladosGamer extends StateMachineGamer {
 	public void preview(Game g, long timeout) throws GamePreviewException {
 
 	}
+
+    @Override
+    public DetailPanel getDetailPanel() {
+        return new SimpleDetailPanel();
+    }
 
 	@Override
 	public String getName() {
